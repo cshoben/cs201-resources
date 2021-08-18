@@ -6,7 +6,7 @@ Note: These videos might not be viewable in Safari. If that is the case, either 
 
 
 ## Cloning From GitLab
-![](videos/Mac_Gitlab_Cloning.mp4)
+![](videos/Mac_GitLab_Cloning.mp4)
 
 
 ## Project Workflow
