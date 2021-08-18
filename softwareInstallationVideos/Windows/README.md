@@ -5,7 +5,7 @@
 
 
 ## Cloning From GitLab
-![](videos/Mac_GitLab_Cloning-2.mp4)
+![](videos/Windows_GitLab_Cloning-2.mp4)
 
 
 ## Project Workflow
