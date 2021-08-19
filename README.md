@@ -1,3 +1,4 @@
+## Calendar
 |Date|Topic|Before Class|Class|Due|
 |:----|:-----|:------------|:-----|:---|
 |8/23|What is 201 & computer science?| |  |  |
