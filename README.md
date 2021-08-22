@@ -3,7 +3,7 @@
 |:----|:-----|:------------|:-----|:---|
 |8/23|What is 201 & computer science?| |  |  |
 |8/25|Java, Classes, Objects| |  |  |
-|8/27|APTs, Project P0| |. |Discussion 1|
+|8/27|APTs, Project P0| | |Discussion 1|
 |8/30|Arrays, Loops| | | |
 |9/1|Arrays and ArrayLists| | |APT 1|
 |9/3|Project P0&P1, APTs| | |Discussion 2|
