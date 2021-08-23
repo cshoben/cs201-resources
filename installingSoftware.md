@@ -125,7 +125,7 @@ git config --global user.email "owen.astrachan@duke.edu"
 
 SSH is the protocol that Git uses to communicate to the remote server (GitLab in this case). You need to create an SSH key on your local machine, and then configure it in your settings on GitLab.
 
-Refer to this documentation by GitLab on how to create an SSH key, specifically, the “***Generating a new SSH key pair***” section. Please use the **ED25519** command: https://coursework.cs.duke.edu/help/ssh/README#generating-a-new-ssh-key-pair 
+Refer to this documentation by GitLab on how to create an SSH key, specifically, the “***Generating a new SSH key pair***” section. Please use the **ED25519** command: https://coursework.cs.duke.edu/help/ssh/index.md
 
 Again, you should use the ***firstname.lastname@duke.edu email address as your comment for your email***. Afterwards, when prompted to “Enter file in which to save the key” and “Enter passphrase”, ***we recommend saving the key at the default location and setting no passphrase (by just pressing Enter twice)***.
 Note that for this step, Git Bash must be used on Windows. (The Command Prompt is still sufficient for other uses of Git.)
@@ -133,7 +133,7 @@ Note that for this step, Git Bash must be used on Windows. (The Command Prompt i
 ### Adding SSH Key to GitLab
 
 Follow the stops in the next section in the GitLab documentation, “***Adding an SSH key to your GitLab account***”:
-https://coursework.cs.duke.edu/help/ssh/README#adding-an-ssh-key-to-your-gitlab-account 
+https://coursework.cs.duke.edu/help/ssh/index.md
 
 Note that you will use the commands shown in the documentation (subject to your OS) to copy the ***public*** part of your SSH key, ***which should start with “ssh-ed25519”***. You will then login to your GitLab account at https://coursework.cs.duke.edu, enter “Settings” from the top right corner, and then paste the public key by following the instructions in the documentation.
 
