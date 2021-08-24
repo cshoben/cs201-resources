@@ -147,7 +147,7 @@ If you see a welcoming message with your name, you’re done! Enjoy!
 
 Note that if you see this prompt instead:
 <div align="middle">
-  <img src="images/git_host_authentication.jpeg" width="300" />
+  <img src="images/git_host_authentication.jpg" width="300" />
 </div>
 Then that means that your computer doesn't recognize coursework.cs.duke.edu yet. Just reply yes to the prompt and then it should continue connecting.
 
