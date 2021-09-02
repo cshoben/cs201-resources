@@ -35,7 +35,7 @@
 
 - If the student has been able to use Git successfully in the past, then they **cloned with HTTPS instead of SSH**. To resolve this issue, have them save the code they have written so far locally (*not in IdeaProjects*), repull the project via SSH, and then replace the files in their new starter code with their locally stored code.
 
-- If the student has never used Git successfully, then they need to **reconfigure their SSH key**. When doing so, walk through them through the steps detailed in the key configuration guide [here](https://docs.google.com/document/d/1m9B4q1j-umopgBUUFUTiuMmLufAuqBa6X0ul_FlQHos/edit) and lend attention to two important details:
+- If the student has never used Git successfully, then they need to **reconfigure their SSH key**. When doing so, walk through them through the steps detailed in the key configuration guide [here](https://coursework.cs.duke.edu/cs201projects/resources-201/-/blob/main/installingSoftware.md) and lend attention to two important details:
 
     1. The student must set save the key to a default location (press "Enter" once) and then set a default password (press "Enter" twice)
 
