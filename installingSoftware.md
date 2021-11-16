@@ -1,6 +1,6 @@
 # Installing Software for CompSci 201
 
-You will need Java, IntelliJ IDEA and Git to complete work in Compsci 201. Installation of these is described below. The software runs on Mac and Windows machines.
+You will need Java, VS Code, and Git to complete work in Compsci 201. Installation of these is described below. The software runs on Mac and Windows machines.
 
 ## Installing Java and JShell
 
@@ -54,23 +54,15 @@ If you encounter an error (e.g. “Command not found”), it probably means the 
 
 You can type `/exit` to quit jshell in your terminal.
 
-## Installing IntelliJ IDEA Community Edition
+## Installing Visual Studio Code
 
-At Duke we will use the IntelliJ IDEA Integrated Development Environment (IDE) in CompSci 201. In the past we have used Eclipse, but we switched to IntelliJ in Fall 2019. You don't need to use IntelliJ in 201, as any other Java IDE such as Eclipse will work, though we recommend IntelliJ as the "official" IDE for CompSci 201.
+At Duke we will use Visual Studio Code as the official development environment (IDE) for CompSci 201. In the past we have used Eclipse and IntelliJ, but we are switching to VSCode in Spring 2022. This portion of the guide was made possible with support from Raj Kundu (T'22).
 
-This guide explains how to install IntelliJ IDEA and Git. The screenshots and explanations below are current as of December 2020.
+## Download Visual Studio Code
 
-***The current version of IntelliJ IDEA is 2020.3 as of December 2020. You can use any previous version, though we'll expect a version from 2020.***
+You can download the latest version of Visual Studio Code at https://code.visualstudio.com/. The download instructions should be on the front page of the website. This should download a .exe file for Windows or a .zip file for Mac - follow the instructions given for [Windows](https://code.visualstudio.com/docs/setup/windows) or [Mac](https://code.visualstudio.com/docs/setup/mac).
 
-### Download IntelliJ IDEA (Installer)
-
-Access the download page from https://www.jetbrains.com/idea/download/. This could get you to a page like the one shown below, or to a similar page. ***Download the Community Edition***.
-
-On a Mac this will download the file named `idealC-2020.3.1.dmg`, and on Windows it should be named `idealC-2020.3.1.exe` as shown to the right. Click on this to unpackage and run the IntelliJ installer (you may see a popup that asks you to allow your computer to open IntelliJ). Note: If you have a recent Mac using Apple Silicon, you may need to select that instead of the Intel option to download.
-
-### Run the Installer
-
-Running the installer will show a simple setup wizard. Follow the steps and wait until the installation finishes. We recommend using the default installation path when you’re prompted for one.
+TODO DANIEL: Continue from here.
 
 ### Launch and Configure IntelliJ
 
