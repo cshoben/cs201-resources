@@ -58,11 +58,14 @@ You can type `/exit` to quit jshell in your terminal.
 
 At Duke we will use Visual Studio Code as the official development environment (IDE) for CompSci 201. In the past we have used Eclipse and IntelliJ, but we are switching to VSCode in Spring 2022. This portion of the guide was made possible with support from Raj Kundu (T'22).
 
-## Download Visual Studio Code
+### Download Visual Studio Code
 
 You can download the latest version of Visual Studio Code at https://code.visualstudio.com/. The download instructions should be on the front page of the website. This should download a .exe file for Windows or a .zip file for Mac - follow the instructions given for [Windows](https://code.visualstudio.com/docs/setup/windows) or [Mac](https://code.visualstudio.com/docs/setup/mac).
 
 TODO DANIEL: Continue from here.
+
+### Launch and Configure Visual Studio Code
+After installation, you should be able to run Visual Studio Code. You should be able to customize it using the Settings page (see the gear icon). TODO RAJ: Am I forgetting something?
 
 ### Launch and Configure IntelliJ
 
@@ -71,6 +74,14 @@ After installation, you should be able to run IntelliJ IDEA Community Edition wi
 You should come to a launch page like the following. You can change the default dark theme to a light theme if you wish by going to customize at the left side menu.
 
 In CompSci 201, you will mainly use “Open” for assignments (large-scale Java projects) and “Create New Project” for APTs. Once you have worked on some projects with IntelliJ, a list of recently opened projects will be shown on the left of the welcome screen.
+
+### Install VS Code Extensions for Java
+
+1. Open the “Extensions” Pane of the Sidebar
+2. Search for “CS201”
+3. Click the blue “Install” button to install the “Duke CS201 Java Extension Pack” extension
+
+TODO: ADD IN ICON.
 
 ### Creating a First Project
 
