@@ -62,18 +62,14 @@ At Duke we will use Visual Studio Code as the official development environment (
 
 You can download the latest version of Visual Studio Code at https://code.visualstudio.com/. The download instructions should be on the front page of the website. This should download a .exe file for Windows or a .zip file for Mac - follow the instructions given for [Windows](https://code.visualstudio.com/docs/setup/windows) or [Mac](https://code.visualstudio.com/docs/setup/mac).
 
-TODO DANIEL: Continue from here.
-
 ### Launch and Configure Visual Studio Code
-After installation, you should be able to run Visual Studio Code. You should be able to customize it using the Settings page (see the gear icon). TODO RAJ: Am I forgetting something?
+After installation, you should be able to run Visual Studio Code and if so, you'll be greeted with a screen like the following. If you wish, you can further customize the screen (like the author has!) by going to File -> Preferences -> Settings.
 
-### Launch and Configure IntelliJ
+<div align="middle">
+  <img src="images/vscodesplash.png" width="400" />
+</div>
 
-After installation, you should be able to run IntelliJ IDEA Community Edition with a splash screen like the following. It may also direct you to a customization wizard: when prompted for plugin settings, use the default ones and don’t change any settings.
-
-You should come to a launch page like the following. You can change the default dark theme to a light theme if you wish by going to customize at the left side menu.
-
-In CompSci 201, you will mainly use “Open” for assignments (large-scale Java projects) and “Create New Project” for APTs. Once you have worked on some projects with IntelliJ, a list of recently opened projects will be shown on the left of the welcome screen.
+In CompSci 201, you will mainly use “Open Folder” for assignments (large-scale Java projects) and create your own folder for APTs. Once you have worked on some projects with VSCode, a list of recently opened projects can be found under "Open Recent."
 
 ### Install VS Code Extensions for Java
 
@@ -81,11 +77,15 @@ In CompSci 201, you will mainly use “Open” for assignments (large-scale Java
 2. Search for “CS201”
 3. Click the blue “Install” button to install the “Duke CS201 Java Extension Pack” extension
 
-TODO: ADD IN ICON.
+<div align="middle">
+  <img src="images/vscode.gif" width="600" />
+</div>
+
+### Creating a First APT Project (walk students through creating their own APT folder)
 
 ### Creating a First Project
 
-While you don’t have to write any code for now, we highly recommend creating a first IntelliJ project to verify that IntelliJ is able to recognize the Java JDK.
+While you don’t have to write any code for now, we highly recommend creating a first IntelliJ project to verify that VSCode is able to recognize the Java JDK.
 
 Click on “New Project” from the welcome screen. It should direct you to a dialog like this: Make sure the “**Project SDK**” dropdown menu shows “**15**” (or an older version on your computer). If you see “&lt;No SDK&gt;” instead, follow the troubleshooting document to set up the JDK in IntelliJ.
 
