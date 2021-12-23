@@ -4,20 +4,23 @@ You will need Java, VS Code, and Git to complete work in Compsci 201. Installati
 
 ## Installing Java and JShell
 
-At Duke we’re using the Liberica JDK developed by Bellsoft, based on the open-source OpenJDK. You may have other versions and/or sources of JDK on your local machine if you installed other programs, ***but you should use the latest version of Liberica JDK for CompSci 201***. The current version is JDK 15 as of January 2021 (some images may be for previous versions).
+At Duke we’re using the Liberica JDK developed by Bellsoft, based on the open-source OpenJDK. You may have other versions and/or sources of JDK on your local machine if you installed other programs, ***but you should use the latest version of Liberica JDK for CompSci 201***. The current version is JDK 17 as of December 2021 (though some images may be from even older, previous versions).
 
 The screenshots in this document are for Windows and the installer for Mac is different, but once you've selected the installer the instructions here should work for you.
 
-The steps below will install both Java and JShell on your computer, since JShell is now built-in with Java.
+The steps below will install both Java and JShell on your computer, since JShell is now built-in with the Java JDK.
 
 ### Download the JDK
 
-Go to https://bell-sw.com/ and click on “Current release”, as shown on the right. You will be directed to the download page.
+Go to https://bell-sw.com/pages/downloads/. Scroll down, and under "Download Liberica JDK," click on the “LTS/Current" tab. As of the time of writing, the current release is JDK 17.
 
-Choose the version of the installer for your OS: You should download the **PKG file for Mac**, and **MSI file for Windows**, as shown below. If you have **Apple Silicon/M1** or a **Surface Pro X**, be sure to change your version from x86 to **ARM**.
+Choose the version of the installer for your OS:
+- If you are using Windows, download the **MSI file** as shown below.
+  - If you have a **Surface Pro X** computer, be sure to change your version from x86 to **ARM** (to the left).
+- If you are using a Mac, download the **PKG file** as shown below.
+  - If you have an **Apple Silicon** (M1, M1X) processor, be sure to change your version from x86 to **ARM** (to the left).
 
 <div align="middle">
-  <img src="images/current_release.png" width="300" />
   <img src="images/JDK_options.png" width="600" /> 
 </div>
 
@@ -25,7 +28,7 @@ Choose the version of the installer for your OS: You should download the **PKG f
 
 Run the file you downloaded and you should see a setup wizard. Follow the steps and if you get a prompt asking for permissions, accept it.
 
-***We recommend not changing the installation path***. On Windows, that means you will be installing Java in a directory starting with `C:\Program Files\`. In this way, if you have any issues with Java or VS Code later in the course, the UTAs can identify issues more easily.
+***We recommend not changing the installation path***. On Windows, that means you will be installing Java in a directory starting with `C:\Program Files\`. This way, if you have any issues with Java or VS Code later in the course, the UTAs can identify issues more easily.
 
 <div align="middle">
   <img src="images/install_jdk_mac.png" width="400" />
