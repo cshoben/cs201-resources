@@ -25,7 +25,7 @@ Choose the version of the installer for your OS: You should download the **PKG f
 
 Run the file you downloaded and you should see a setup wizard. Follow the steps and if you get a prompt asking for permissions, accept it.
 
-***We recommend not changing the installation path***. On Windows, that means you will be installing Java in a directory starting with `C:\Program Files\`. In this way, if you have any issues with Java or IntelliJ later in the course, the UTAs can identify issues more easily.
+***We recommend not changing the installation path***. On Windows, that means you will be installing Java in a directory starting with `C:\Program Files\`. In this way, if you have any issues with Java or VS Code later in the course, the UTAs can identify issues more easily.
 
 <div align="middle">
   <img src="images/install_jdk_mac.png" width="400" />
@@ -50,13 +50,13 @@ If you encounter an error (e.g. “Command not found”), it probably means the 
   <img src="images/jshell_mac.png" width="400" />
 </div>
 
-***While JShell allows you to use basic Java functionality and expressions, it is not what we use for coursework in CompSci 201. Most of the coding will be done via IntelliJ IDEA, as described below.***
+***While JShell allows you to use basic Java functionality and expressions, it is not what we use for coursework in CompSci 201. Most of the coding will be done in VS Code, as described below.***
 
 You can type `/exit` to quit jshell in your terminal.
 
 ## Installing Visual Studio Code
 
-At Duke we will use Visual Studio Code as the official development environment (IDE) for CompSci 201. In the past we have used Eclipse and IntelliJ, but we are switching to VSCode in Spring 2022. This portion of the guide was made possible with support from Raj Kundu (T'22).
+At Duke we will use Visual Studio Code as the official development environment (IDE) for CompSci 201. In the past we have used Eclipse and IntelliJ, but we are switching to VS Code in Spring 2022. This portion of the guide was made possible with support from Raj Kundu (T'22).
 
 ### Download Visual Studio Code
 
@@ -66,10 +66,10 @@ You can download the latest version of Visual Studio Code at https://code.visual
 After installation, you should be able to run Visual Studio Code and if so, you'll be greeted with a screen like the following. If you wish, you can further customize the screen (like the author has!) by going to File -> Preferences -> Settings.
 
 <div align="middle">
-  <img src="images/vscodesplash.png" width="400" />
+  <img src="images/vscode-splash.png" width="400" />
 </div>
 
-In CompSci 201, you will mainly use “Open Folder” for assignments (large-scale Java projects) and create your own folder for APTs. Once you have worked on some projects with VSCode, a list of recently opened projects can be found under "Open Recent."
+In CompSci 201, you will mainly use “Open Folder” for assignments (large-scale Java projects) and create your own folder for APTs. Once you have worked on some projects with VS Code, a list of recently opened projects can be found under "Open Recent."
 
 ### Install VS Code Extensions for Java
 
@@ -78,22 +78,55 @@ In CompSci 201, you will mainly use “Open Folder” for assignments (large-sca
 3. Click the blue “Install” button to install the “Duke CS201 Java Extension Pack” extension
 
 <div align="middle">
-  <img src="images/vscode.gif" width="600" />
+  <img src="images/vscode-extensionpack_install.gif" width="600" />
 </div>
 
-### Creating a First APT Project (walk students through creating their own APT folder)
+### Organizing Your Code
 
-### Creating a First Project
+Unlike some other IDEs, VS Code works with folders, not "VS Code projects" - so any folder/directory that exists on your computer can be opened in VS Code with `File > Open`.
 
-While you don’t have to write any code for now, we highly recommend creating a first IntelliJ project to verify that VSCode is able to recognize the Java JDK.
+In CS 201, use any file structure which makes sense to you. The following is an example of a file structure which you might use, for example:
 
-Click on “New Project” from the welcome screen. It should direct you to a dialog like this: Make sure the “**Project SDK**” dropdown menu shows “**15**” (or an older version on your computer). If you see “&lt;No SDK&gt;” instead, follow the troubleshooting document to set up the JDK in IntelliJ.
+```
+▼ CS 201
+  ▼ APT
+    ▼ 1
+      - AccessLevel.java
+      - CirclesCountry.java
+    ▼ 2
+      - TxMsg.java
+      - ...
+  ▼ Projects
+    ▶ P0-Person201
+    ▶ P1-NBody
+    - ...
+```
 
-Once you verify the SDK, click “Next” until the final step where you need to give the project a name and location. Feel free to change its name or choose a different location to save the project, though it won’t be required (since this project is meant to be just a walkthrough of the process).
+### Testing VS Code + Java
 
-Click “Finish” and you should be brought to the project workspace as shown below. Congrats! You created your first Java project.
+While you don’t have to write any code for now, we highly recommend creating a first project to ensure that VS Code works properly with the Java JDK:
 
-For a quick introduction to the IntelliJ IDE, check out [this short (< 5 minute) video](https://www.youtube.com/watch?v=c0efB_CKOYo) by the developers along with [their getting started guide](https://www.jetbrains.com/help/idea/getting-started.html).  
+1. Create a temporary folder to house this project anywhere you would like
+    - For example, if you were using the file structure above, you might create a temporary folder under the `CS 201` folder called `Testing`
+    - A temporary foler in your Desktop or Documents folder works as well!
+2. Open VS Code, click `File > Open`, and navigate to the folder you just created.
+3. Create a new file using `File > New File`. Save it (`File > Save`) as `HelloWorld.java`.
+4. Paste the following code into `HelloWorld.java`:
+    ```java
+    public class HelloWorld {
+      public static void main(String[] args) {
+        System.out.println("Hello, world!"); 
+      }
+    }
+    ```
+5. Save `HelloWorld.java` and run it using either of the "Run" buttons highlighted below.
+<div align="middle">
+  <img src="images/vscode-runbuttons.png" width="600" />
+</div>
+
+6. You should see the integrated terminal window pop up, and your program should run and print `Hello, world!` into the terminal.
+
+For a quick introduction to VS Code, you can skim [these](https://code.visualstudio.com/docs/introvideos/basics) official introductory resources. If you choose to do this, just watching the first one or two videos (<10 min.) should be more than enough!
 
 ## Installing Git and Configuring GitLab
 
@@ -113,7 +146,7 @@ After you’ve installed Homebrew, run the command `brew install git`.
 
 ### Setting Up Credentials in Git
 
-Git can be used either on the command line (like Terminal in Mac and CMD on Windows), via the Git GUI, or via IntelliJ’s built-in Git integration. **However, we strongly recommend that you use Git on the command line**. 
+Git can be used either on the command line (like Terminal in Mac and CMD on Windows), via the Git GUI, or via VS Code's built-in Git integration. **However, we strongly recommend that you use Git on the command line**. 
 
 On a Mac, use the Terminal application, on Windows use either the Command Prompt that comes with the OS or the Git Bash Shell that is part of the Windows Git install.
 
