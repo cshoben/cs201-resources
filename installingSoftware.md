@@ -1,10 +1,10 @@
 # Installing Software for CompSci 201
 
-You will need Java, VS Code, and Git to complete work in Compsci 201. Installation of these is described below. The software runs on Mac and Windows machines.
+You will need Java, VS Code, and Git to complete work in Compsci 201. Installation of these is described below. While this software is also compatible with Linux, these instructions have only been tested on Mac and Windows machines.
 
 ## Installing Java and JShell
 
-At Duke we’re using the Liberica JDK developed by Bellsoft, based on the open-source OpenJDK. You may have other versions and/or sources of JDK on your local machine if you installed other programs, ***but you should use the latest version of Liberica JDK for CompSci 201***. The current version is JDK 17 as of December 2021 (though some images may be from even older, previous versions).
+At Duke, we’re using the Liberica JDK, which is developed by Bellsoft and based on the open-source OpenJDK. You may have other versions and/or sources of JDK on your local machine if you installed other programs, ***but you should use the latest version of Liberica JDK for CompSci 201***. The current latest version is JDK 17 as of December 2021 (though some included images may depict even older versions).
 
 The screenshots in this document are for Windows and the installer for Mac is different, but once you've selected the installer the instructions here should work for you.
 
