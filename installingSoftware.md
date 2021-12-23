@@ -173,7 +173,7 @@ https://coursework.cs.duke.edu/help/ssh/index.md
 
 Note that you will use the commands shown in the documentation (subject to your OS) to copy the ***public*** part of your SSH key, ***which should start with “ssh-ed25519”***. You will then login to your GitLab account at https://coursework.cs.duke.edu, enter “Settings” from the top right corner, and then paste the public key by following the instructions in the documentation.
 
-**NOTE**: You must use https://coursework.cs.duke.edu and log in via Shibboleth if you want this process to work. To know that this worked, your GitLab username will be @firstname.lastname, not @netID
+**NOTE**: You must use https://coursework.cs.duke.edu and log in via Shibboleth if you want this process to work. To know that this worked, your GitLab username will be **@firstname.lastname**, _NOT_ @netID
 
 To verify that everything has been set up perfectly, use the following command:
 
