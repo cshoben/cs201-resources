@@ -85,7 +85,7 @@ In CompSci 201, you will mainly use “Open Folder” for assignments (large-sca
 
 Unlike some other IDEs, VS Code works with folders, not "VS Code projects" - so any folder/directory that exists on your computer can be opened in VS Code with `File > Open`.
 
-In CS 201, use any file structure which makes sense to you. The following is an example of a file structure which you might use, for example:
+For CS 201, you should use the file structure that makes the most sense to you. The following is one which you might use, for example:
 
 ```
 ▼ CS 201
