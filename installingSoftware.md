@@ -189,7 +189,7 @@ To verify that everything has been set up perfectly, use the following command:
 
 If you see a welcoming message with your name, you’re done! Enjoy!
 
-Note that if you see this prompt instead:
+Note that if you see a similar prompt to this instead:
 <div align="middle">
   <img src="images/git_host_authentication.jpg" width="300" />
 </div>
