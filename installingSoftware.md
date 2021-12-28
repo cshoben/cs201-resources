@@ -86,17 +86,21 @@ In CompSci 201, you will mainly use “Open Folder” for assignments (large-sca
 
 ### Organizing Your Code
 
-Unlike some other IDEs, VS Code works with folders, not "VS Code projects" - so any folder/directory that exists on your computer can be opened in VS Code with `File > Open`.
+Unlike some other IDEs, VS Code works with folders, not "VS Code projects." Any folder/directory that exists on your computer can be opened in VS Code with `File > Open`. For this course, you’ll work with folders that each store a collection of related Java files that you will code, run, and test.
 
-For CS 201, you should use the file structure that makes the most sense to you. The following is one which you might use, for example:
+For CS 201, you should set up a folder to store your code related to this course. It should be
+1. in a location that you will remember
+2. in a format/structure that makes sense to you
+
+We recommend the following folder setup:
 
 ```
 ▼ CS 201
   ▼ APT
-    ▼ 1
+    ▼ APT 1
       - AccessLevel.java
       - CirclesCountry.java
-    ▼ 2
+    ▼ APT 2
       - TxMsg.java
       - ...
   ▼ Projects
@@ -104,6 +108,7 @@ For CS 201, you should use the file structure that makes the most sense to you. 
     ▶ P1-NBody
     - ...
 ```
+You do not have to create the individual subfolders under APTs or Projects yet - instead, you can create them throughout the course, as necessary.
 
 ### Testing VS Code + Java
 
@@ -111,7 +116,7 @@ While you don’t have to write any code for now, we highly recommend creating a
 
 1. Create a temporary folder to house this project anywhere you would like
     - For example, if you were using the file structure above, you might create a temporary folder under the `CS 201` folder called `Testing`
-    - A temporary foler in your Desktop or Documents folder works as well!
+    - A temporary folder in your Desktop or Documents folder works as well!
 2. Open VS Code, click `File > Open`, and navigate to the folder you just created.
 3. Create a new file using `File > New File`. Save it (`File > Save`) as `HelloWorld.java`.
 4. Paste the following code into `HelloWorld.java`:
