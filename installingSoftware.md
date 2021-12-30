@@ -98,7 +98,7 @@ Git is the most widely used version control system. Git allows you to keep track
 
 ## Installing Git
 
-**TLDR**: You can watch our UTAs go over the following Git installation process using Windows and Mac [here](https://drive.google.com/drive/u/0/folders/1SxcqxJKTsvZ-e8KXciQ6m5TULlY7-9tO) under the videos "Mac_SSH_Key" and "Windows_SSH_Key."
+**TLDR**: You can watch our UTAs go over the following Git installation process using Windows and Mac [here](#git-setup-videos) under the videos "Mac_SSH_Key" and "Windows_SSH_Key."
 
 Head to https://git-scm.com/downloads and download the version of Git for your platform: Mac, Windows, Linux. Install this on your machine. Use default settings when prompted.
 
@@ -151,6 +151,12 @@ Note that if you see this prompt instead:
 </div>
 Then that means that your computer doesn't recognize coursework.cs.duke.edu yet. Just reply yes to the prompt and then it should continue connecting.
 
+## Git Setup Videos
 
+### Mac
+![](softwareInstallationVideos/Mac/videos/Mac_SSH_Key.mp4)
+
+### Windows
+![](softwareInstallationVideos/Windows/videos/Windows_SSH_Key.mp4)
 
 
