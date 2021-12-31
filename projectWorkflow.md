@@ -17,7 +17,7 @@ The official introduction to VS Code can be found [here](https://code.visualstud
 Upon installing VS Code, you'll be greeted with a launch screen like this:
 
 <div align="middle">
-  <img src="images/vscode_launch.png" width="400" />
+  <img src="images/vscode-launch.png" width="700" />
 </div>
 
 For this course, you'll mainly be using "Open" to open folders that each store a collection of related Java files that you will code, run, and test.
@@ -61,7 +61,7 @@ Once you open that GitLab repository, **_you will need to fork the project first
 Then choose your own account to fork it under your namespace (example: Charles Lyu (T'21)):
 
 <div align="middle">
-  <img src="images/fork-namespace.png" width="400" />
+  <img src="images/fork-workspace.png" width="400" />
 </div>
 
 Once you fork the project, you should see your own name in the URL and on the project home page. It should also mention that your project is forked from the 201 namespace.
