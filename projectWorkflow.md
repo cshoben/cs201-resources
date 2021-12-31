@@ -16,17 +16,65 @@ The official introduction to VS Code can be found [here](https://code.visualstud
 
 Upon installing VS Code, you'll be greeted with a launch screen like this:
 
+<div align="middle">
+  <img src="images/vscode_launch.png" width="400" />
+</div>
 
+For this course, you'll mainly be using "Open" to open folders that each store a collection of related Java files that you will code, run, and test.
 
-For this course, you'll mainly be using "Open" to open folders containing code related to projects.
+## Step 0: Creating a Workspace for the Course
 
-Unlike some other IDEs, VS Code works with folders, not "VS Code projects." Any folder/directory that exists on your computer can be opened in VS Code with File > Open. For this course, you’ll work with folders that each store a collection of related Java files
+These instructions are copied over from the installation guide. For CS 201, you should set up a folder to store your code related to this course. It should be
 
-## Step 0: Creating all
+in a location that you will remember
+in a format/structure that makes sense to you
 
-These instructions are copied over from the installation guide.
+We recommend the following folder setup:
 
-## Step 1: 
+```
+▼ CS 201
+  ▼ APT
+    ▼ APT 1
+      - AccessLevel.java
+      - CirclesCountry.java
+    ▼ APT 2
+      - TxMsg.java
+      - ...
+  ▼ Projects
+    ▶ P0-Person201
+    ▶ P1-NBody
+    - ...
+```
+
+For this guide, we'll be focusing on the second subfolder, `Projects`.
+
+## Step 1: Forking the Starter Code
+
+For every Java project (sometimes called “assignment”), course staff will create a starter code repository on GitLab with namespace `201<semester><year>`, e.g. `201fall20`. The instructions document for the assignment will provide a link to the source code, which you should open.
+
+Once you open that GitLab repository, **_you will need to fork the project first_**, that is, create your own copy of the repo. Click on the **“Fork”** button at the top right: (_If you don’t see the “Fork” button, sign in with your Duke NetID from the top right_).
+
+<div align="middle">
+  <img src="images/fork-repo.png" height="200" />
+</div>
+
+Then choose your own account to fork it under your namespace (example: Charles Lyu (T'21)):
+
+<div align="middle">
+  <img src="images/fork-namespace.png" width="400" />
+</div>
+
+Once you fork the project, you should see your own name in the URL and on the project home page. It should also mention that your project is forked from the 201 namespace.
+
+<div align="middle">
+  <img src="images/fork-confirmation.png" width="400" />
+</div>
+
+## Video Links
+
+# APT Workflow (temporary until it's migrated to its own file)
+
+## THIS DOCUMENT IS STILL UNDER EDITS
 
 NOTE to people reading this, I'm largely referring to [this document](https://docs.google.com/document/d/1dlEwDwiIyEQFxXOHS_zY-Qojx4djl4p2Ud16qpeb7gY/edit#) AND this script (I would say we're currently at Step 2 of the document/ Clone SSH link on the following guide):
 
@@ -52,8 +100,4 @@ Project Workflow
 - Refresh the GitLab page and show that the change actually transferred over
 - Show optional method: Use VSCode -> Source Control.
 - Make another commit, stage commits, commit, and push (remember check mark is commit, all other commands are hidden elsewhere)
-
-## Video Links
-
-# APT Workflow (temporary until it's migrated to its own file)
 
