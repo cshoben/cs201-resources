@@ -2,6 +2,7 @@
 This page is your one-stop shop to everything technical related in CS201 @ Duke!
 
 ## [Installation Guide](./installingSoftware.md)
-### [Windows Video Guide](./softwareInstallationVideos/Windows)
-### [Mac Video Guide](./softwareInstallationVideos/Mac)
+## [Project Guide](./projectWorkflow.md)
+## [APT Guide](./APTWorkflow.md)
 ## [Troubleshooting Guide](./gitTroubleshooting.md)
+## [Java vs Python](./JavaVSPython.md)
