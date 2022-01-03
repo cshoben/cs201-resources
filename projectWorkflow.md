@@ -138,7 +138,73 @@ Many assignments come with executable classes, typically named as “Driver” o
 
 TODO DANIE: LINK TO RUNNING YOUR CODE
 
+# Step 5: Pushing your Code to Git
 
+“Pushing to Git” means saving your changes as a Git commit and uploading them to the GitLab repo, so that your changes are now reflected in the online server.
+
+***You should push your code regularly while working on the project*** (as a way to backup your code in case of technical issues). ***You have to ALWAYS push your code to Git EVERY TIME BEFORE submitting or resubmitting the project on Gradescope*** (otherwise your changes won’t appear on Gradescope and will NOT be graded).
+
+First, open a Terminal or CMD/Git Bash shell, and use the cd command to navigate to your project directory. Note that you have to enter ***the directory for this specific project*** (e.g. “p0-person”), not your general “CS201” workspace. Also, do not go inside the `src` folder.
+
+Once you’re in the project directory, use the following 3 commands:
+
+```bash
+git add .
+git commit -m "a short description of your commit here"
+git push
+```
+
+Replace `“a short description of your commit here”` with an actual, meaningful commit message, e.g. “Finished the Person class” or “Passed all JUnit tests”. ***Double quotation marks are necessary.*** Also, note the period (.) after the `git add` command.
+
+If the push is successful, you should see a message similar to below. If you’re encountering errors, refer to the Troubleshooting Document.
+
+
+***Remember to always use the 3 commands together every time you push! Don’t leave out any of them.***
+
+It’s helpful to open your repository from GitLab (http://coursework.cs.duke.edu) to verify that all changes have been reflected.
+
+# Step 6: Submitting your Project on Gradescope
+
+Once you’ve completed the programming part of the project and passed all/most of the tests that come with the starter code, you can submit your work to Gradescope. ***You will need to submit or resubmit your project to Gradescope every time you make a change in any of the files in your Git repo.***
+
+Before you submit, ***make sure you have pushed all your changes to Git.*** Open your repo in GitLab to verify the changes have been pushed.
+
+Login to Gradescope using “***School Credentials***” so that you can login using your NetID. After you login to Gradescope, you should see the course in the dashboard:
+
+
+
+Once you open the course, you can see a list of assignments, their due dates and your submission status. Clicking on the assignment title will bring you to a submission page:
+
+
+
+Choose “***GitLab***” for submission. Do NOT use GitHub!!!
+
+You will then be prompted to choose a repository to submit. Note that due to a bug with GitLab, ***the “Last Updated” times could be inaccurate***, but your latest changes will always be submitted.
+
+
+
+Once you upload the submission, it will lead you to a page with the autograder results. Most of the time you will see the following message. Wait patiently: the autograder might take up to 5~10 minutes to run depending on the efficiency of your code, especially for later assignments.
+
+
+When the autograder finishes running, you can see a list of test cases you have passed or failed. All test cases have a short description of what is being tested; in addition, if you have failed a case, there will usually be some output that tells you (very briefly) why you failed. These test cases are more exhaustive than the ones in the starter code.
+
+
+
+You can resubmit as many times as you want before the late submission deadline is passed, by using the “***Resubmit***” option at the bottom. However, if you wish to do so, ***you need to push your latest work to Git AND resubmit on Gradescope.*** Gradescope is not able to auto-sync with your Git repo. 
+
+***You should resubmit the project (push to Git and resubmit on Gradescope) every time you make changes to the programming part of the assignment that you want to be graded. In particular, this also applies if you want to add Javadoc comments*** to your code for the Code Style requirements of the assignment (if applicable).
+
+If you get a lower score on the resubmission and want to use an older submission instead, you can activate an old submission from “Submission History” at the bottom.
+
+If you submit or resubmit after the grace period has passed (typically 24 hours after the official due date), a ***late penalty*** will apply. Refer to the syllabus for details on late penalties.
+
+# Step 7: Complete the Analysis Part of the Assignment
+
+Most assignments also come with a set of analysis questions, where you have to paste some results from running your program and/or answer some conceptual questions. 
+
+You can typically get the analysis questions from the assignment writeup and on the Reflect form itself. Either answer directly on the Reflect form, or write your answers in a text editor and then paste them into the form.
+
+The analysis questions will be manually graded by the UTAs, so your scores won’t appear immediately. Once the grades are published, typically soon after the assignment is due, you can check back on Gradescope to see the scores you got on the analysis. Note that before the assignment is due, you will still see an “Analysis” question on Gradescope without points; however, you don’t have to worry about it or do anything on Gradescope regarding the analysis.
 
 
 # APT Workflow (temporary until it's migrated to its own file)
