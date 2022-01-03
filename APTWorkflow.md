@@ -31,32 +31,38 @@ Right clicking on the directory, choose “New File”:
   <img src="images/apt-newfile.png" width="400" />
 </div>
 
-TODO DANIEL: CONTINUE BELOW.
+When creating Java classes for APTs, the APT problem statement should have provided you a name for the class as well as some stub code for you to get started, as shown below. _**Type the same class name in the “New Java Class” window and copy in the stub code into the file.**_
 
-When creating Java classes for APTs, the APT problem statement should have provided you a name for the class as well as some stub code for you to get started, as shown below. Type the same class name in the “New Java Class” window.
-If an assignment/project asks you to create a Java class, the name of the class would have been given in the instructions.
-  
+<div align="middle">
+  <img src="images/apt-stub.png" width="700" />
+</div>
 
-You will then be brought to the new Java file ending with “.java”. For APTs, replace the file’s contents with the given code from the APT.
+Now you can start developing your code. (If you get a red error like shown above, don’t worry. You should be able to resolve the error once you put in a `return` statement.)
 
-Now you can start developing your code. (If you get a red error like shown above, don’t worry. You should be able to resolve the error once you put in a return statement.)
+## Running your code
+You can only run a Java class if it has a `main` method (more on that later in the course). For assignments, we will most likely provide a class with a `main` method for you. For APTs, you typically do not need to execute any files you create (but you can still create a `main` method to debug your APT). 
 
-Running your code
-You can only run a Java class if it has a main method (more on that later in the course). For assignments, we will most likely provide a class with a main method for you. For APTs, you typically do not need to execute any files you create (but you can still create a main method to debug your APT). 
+To run a Java class, either right-click the file and click `Run Java` or click the triangle in the upper right.
 
-To run a Java class, from the Run menu choose “Run...” (with the ellipsis), and then choose the class that you want to execute:
+<div align="middle">
+  <img src="images/apt-stub.png" width="500" />
+</div>
 
+## REMAINING THINGS HERE: 
+FILL IN REST: https://docs.google.com/document/d/1dlEwDwiIyEQFxXOHS_zY-Qojx4djl4p2Ud16qpeb7gY/edit#
 
+Note to Matthew, the following students (especially Git repo) are not as important.
 
-Once you do that for the first time, IntelliJ will remember which class you executed. Subsequently, you can choose the first option “Run” (without the ellipsis), and IntelliJ will run the most recently executed class - regardless of which file you’re currently editing - until you use “Run...” and choose a different class to run. This means if you run class A first and then open another class B and make changes, the option “Run” without ellipsis will still run class A, even if the window for B.java is currently active.
-(Optional) Creating a main method for APTs
+## (Optional) Creating a main method for APTs
 As mentioned above, you do NOT need to run your code for APTs; as such, a main method is not required. Nevertheless, if you’re having errors, having a main method is extremely helpful for debugging your code.
 
 To create a main method, add the following method within the class (it should not be nested within another method):
 
+```
 public static void main(String[] args) {
     // code here
 }
+```
 
 And then replace // code here with code that you want to execute.
 
@@ -87,6 +93,7 @@ Note that if the return value is an array, you can use Arrays.toString to print 
     System.out.println(Arrays.toString(a));
 
 Remember you can use a main method to test you code, but it must be removed or commented out before you submit it to the APT tester.
+
 (Optional) Creating a Git Repo for APTs
 Using Git for APTs is not required, but we recommend that you create a Git repo for APTs and push your work to GitLab regularly. This helps preserve your work in a catastrophic computer failure.
 Creating a Git repo without an existing IntelliJ project
