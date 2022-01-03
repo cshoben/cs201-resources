@@ -161,10 +161,31 @@ Replace `“a short description of your commit here”` with an actual, meaningf
 
 If the push is successful, you should see a message similar to below. If you’re encountering errors, refer to the Troubleshooting Document.
 
+<div align="middle">
+  <img src="images/git_trinity.png" />
+</div>
 
 ***Remember to always use the 3 commands together every time you push! Don’t leave out any of them.***
 
 It’s helpful to open your repository from GitLab (http://coursework.cs.duke.edu) to verify that all changes have been reflected.
+
+***Alternatively***, you can use VSCode's Source Control feature to push changes without using the command line. To do so, first click the "Source Control" tab on the left side of the IDE and stage the changes by clicking the "+" icon next to the "Changes" heading. 
+
+<div align="middle">
+  <img src="images/vs_stage.png" width="350" />
+</div>
+
+Next, click the checkmark to commit changes; you'll also need to add a commit message here.
+
+<div align="middle">
+  <img src="images/vs_commit.png" width="800" />
+</div>
+
+Finally, push your changes by selecting "Sync Changes".
+
+<div align="middle">
+  <img src="images/vs_push.png" width="400" />
+</div>
 
 # Step 6: Submitting your Project on Gradescope
 
@@ -174,24 +195,36 @@ Before you submit, ***make sure you have pushed all your changes to Git.*** Open
 
 Login to Gradescope using “***School Credentials***” so that you can login using your NetID. After you login to Gradescope, you should see the course in the dashboard:
 
+<div align="middle">
+  <img src="images/gs_homepage.png" width="300" />
+</div>
 
 
 Once you open the course, you can see a list of assignments, their due dates and your submission status. Clicking on the assignment title will bring you to a submission page:
 
-
+<div align="middle">
+  <img src="images/gs_submit.png" width="400" />
+</div>
 
 Choose “***GitLab***” for submission. Do NOT use GitHub!!!
 
 You will then be prompted to choose a repository to submit. Note that due to a bug with GitLab, ***the “Last Updated” times could be inaccurate***, but your latest changes will always be submitted.
 
-
+<div align="middle">
+  <img src="images/gs_gitlab.png" />
+</div>
 
 Once you upload the submission, it will lead you to a page with the autograder results. Most of the time you will see the following message. Wait patiently: the autograder might take up to 5~10 minutes to run depending on the efficiency of your code, especially for later assignments.
 
+<div align="middle">
+  <img src="images/gs_running.png" width="400" />
+</div>
 
 When the autograder finishes running, you can see a list of test cases you have passed or failed. All test cases have a short description of what is being tested; in addition, if you have failed a case, there will usually be some output that tells you (very briefly) why you failed. These test cases are more exhaustive than the ones in the starter code.
 
-
+<div align="middle">
+  <img src="images/gs_score.png" width="600" />
+</div>
 
 You can resubmit as many times as you want before the late submission deadline is passed, by using the “***Resubmit***” option at the bottom. However, if you wish to do so, ***you need to push your latest work to Git AND resubmit on Gradescope.*** Gradescope is not able to auto-sync with your Git repo. 
 
