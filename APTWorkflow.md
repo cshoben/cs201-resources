@@ -1,29 +1,37 @@
 # APT Workflow
-APTs are small-scale “problem sets” where you have to write a Java method to solve a particular problem. Unlike assignments (projects), APTs do not come with starter codes for you to clone and import (though each APT problem has an empty method stub as a starting point). You will have to create Java folders in which you will write and run code using VS Code.
+APTs are small-scale “problem sets” where you have to write a Java method to solve a particular problem. Unlike assignments (projects), APTs do not come with starter codes for you to clone and import. Instead, for each APT problem, you will create your own Java file (using an empty method stub as a starting point) and upload that to a testing server. This guide goes over best practices for organizing APT code.
 
-We recommend creating a new project for each APT set, e.g. the project can be called “APT1” which contains code for each problem in this APT; later you can create a new project called “APT2”, etc.
+In particular, as mentioned in the installation guide, we recommend creating a single directory where you will store subdirectories containing each APT set, as shown below:
 
-Note: You can also create a Git repo for each APT, so that you can backup your work in the local IntelliJ project to a remote repository on GitLab. While it’s not required, we strongly recommend doing so as it allows you to view the file history easily, saves your work in case of hardware failures, and lets UTAs view your full code more conveniently. If you wish to do so, see instructions below before creating the project in IntelliJ.
+```
+▼ CS 201
+  ▼ APT
+    ▼ APT 1
+      - AccessLevel.java
+      - CirclesCountry.java
+    ▼ APT 2
+      - TxMsg.java
+      - ...
+  ▼ Projects
+    ▶ P0-Person201
+    ▶ P1-NBody
+    - ...
+```
 
-To create a new project in IntelliJ:
+## Creating a New Folder for each APT set
 
-Click on “Create New Project” from the welcome screen. 
-IntelliJ will now ask you to choose the language and the SDK. Typically, the “Project SDK” dropdown menu should have a default option “15” [or any version of Java (at least 11)] which looks like the one below. (If you do not see such an option or only has “<No SDK>” in the dropdown menu, refer to the Troubleshooting Document.)
+Unlike other IDEs, VS Code stores code in folders, not projects. Under the APT directory, go ahead and create a new folder/subdirectory for each APT set, e.g. “APT1” containing code for the first APT set. Proceed to open this folder (e.g APT1) in VS Code. 
 
+## Creating New Java Classes
+You can create a new Java class (file) in this folder.
 
+Right clicking on the directory, choose “New File”:
 
-Click “Next” twice until you reach a screen with the project name and location settings. You will give each project a name, and we recommend storing the project in a subdirectory under your CS201 workspace, as mentioned above. Do NOT set the project location to be the “CS201” directory itself!
+<div align="middle">
+  <img src="images/apt-newfile.png" width="400" />
+</div>
 
-
-(If you have already created a GitLab repo and cloned it to your computer, you should choose the project location to be where the empty Git repo is. You will get a warning that the target directory already exists, just ignore it.)
-
-You will then enter the IntelliJ workspace. Clicking the “Project” button in the left sidebar will show you the file hierarchy. 
-Creating New Java Classes
-You can create a new Java class (file) in the src folder. All Java classes should be placed in the src folder.
-
-Right clicking on the directory, then choose “New” - “Java Class”:
-
-
+TODO DANIEL: CONTINUE BELOW.
 
 When creating Java classes for APTs, the APT problem statement should have provided you a name for the class as well as some stub code for you to get started, as shown below. Type the same class name in the “New Java Class” window.
 If an assignment/project asks you to create a Java class, the name of the class would have been given in the instructions.
@@ -105,11 +113,11 @@ Open a Terminal or CMD/Git Bash shell, and use the cd command to navigate to you
 Make sure you’re in the root folder of your project: it should contain a src subdirectory which has all the Java files.
 Once you’re in the directory, use the following commands:
 
-git init
+`git init
 git remote add origin <your-project-URI>
 git add .
 git commit -m "Initial commit"
-git push -u origin master
+git push -u origin master`
 
 Replacing <your-project-URI> with the SSH URI of your GitLab project (obtained from the “Clone” option on your project’s home page). These commands will initialize the directory as a Git repository and link it to the remote repo.
 Note the “-u origin master” arguments for git push. These are necessary in this particular scenario, as they tell Git which remote repository and branch to push to.
