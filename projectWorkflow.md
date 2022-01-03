@@ -7,6 +7,9 @@ TODO DANIEL: ADD IN LINK ABOVE.
 
 TODO DANIEL: ADD IN PROPER VIDEO LINKS ONCE CREATED!
 
+
+[Tutorial Videos](#tutorial-videos)
+
 ## Overview of Visual Studio Code
 
 The official introduction to VS Code can be found [here](https://code.visualstudio.com/docs). In particular, the following links should be useful in getting to know VS Code!
@@ -206,6 +209,23 @@ You can typically get the analysis questions from the assignment writeup and on 
 
 The analysis questions will be manually graded by the UTAs, so your scores won’t appear immediately. Once the grades are published, typically soon after the assignment is due, you can check back on Gradescope to see the scores you got on the analysis. Note that before the assignment is due, you will still see an “Analysis” question on Gradescope without points; however, you don’t have to worry about it or do anything on Gradescope regarding the analysis.
 
+# Tutorial Videos
+
+## Cloning from GitLab
+
+### Mac
+
+![](softwareInstallationVideos/Mac/videos/Mac_Clone_Project.mp4)
+
+### Windows
+
+## Managing Project Workflow
+
+### Mac
+
+![](softwareInstallationVideos/Mac/videos/Mac_Project_Workflow_2.0.mp4)
+
+### Windows
 
 # APT Workflow (temporary until it's migrated to its own file)
 
