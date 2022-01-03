@@ -3,12 +3,7 @@ This guide will walk you through how to complete Java assignments/projects in Co
 
 TODO DANIEL: ADD IN LINK ABOVE.
 
-**NOTE**: If you wish, you may also follow these instructions in video format under the videos "Mac_Cloning_Project/Windows_Cloning_Project" and "Mac_Project_Workflow"/"Windows_Project_Workflow."
-
-TODO DANIEL: ADD IN PROPER VIDEO LINKS ONCE CREATED!
-
-
-[Tutorial Videos](#tutorial-videos)
+**NOTE**: If you wish, you may also follow these instructions in [video format.](#tutorial-videos)
 
 ## Overview of Visual Studio Code
 
@@ -252,6 +247,8 @@ The analysis questions will be manually graded by the UTAs, so your scores wonâ€
 
 ### Windows
 
+![](softwareInstallationVideos/Windows/videos/Windows_GitLab_Cloning.mp4)
+
 ## Managing Project Workflow
 
 ### Mac
@@ -260,27 +257,4 @@ The analysis questions will be manually graded by the UTAs, so your scores wonâ€
 
 ### Windows
 
-# APT Workflow (temporary until it's migrated to its own file)
-
-## THIS DOCUMENT IS STILL UNDER EDITS
-
-NOTE to people reading this, I'm largely referring to [this document](https://docs.google.com/document/d/1dlEwDwiIyEQFxXOHS_zY-Qojx4djl4p2Ud16qpeb7gY/edit#) AND this script (I would say we're currently at Step 3 of the document/ Clone SSH link on the following guide):
-
-Cloning from GitLab
-- Remind students that this video assumes you've set up an SSH key
-- Show how to fork from GitLab page
-- Clone SSH link
-- Open up command line and navigate to the proper place
-- Clone with command line and open folder in VS Code
-- Show optional method: Open in your IDE -> Visual Studio Code (SSH)
-- REMEMBER you have to make a new folder where you'll store in the repo files
-Project Workflow
-- Remind students that this video assumes that you have Liberica installed AND the previous instructions have been followed
-- Show that VSCode is not recognizing Java
-- Install Rajâ€™s plugin
-- Make one single change in the project (and make sure to save since itâ€™s VSCode!!!!)
-- Run through the trinity of Git commands
-- Refresh the GitLab page and show that the change actually transferred over
-- Show optional method: Use VSCode -> Source Control.
-- Make another commit, stage commits, commit, and push (remember check mark is commit, all other commands are hidden elsewhere)
-
+![](softwareInstallationVideos/Windows/videos/Windows_Project_Workflow.mp4)
