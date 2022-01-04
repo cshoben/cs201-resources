@@ -234,6 +234,35 @@ To verify the URI is correct.
 </details>
 
 <details>
+<summary>I get the error “Updates were rejected because the remote contains work that you do not have locally” when using git push:</summary>
+<br>
+
+```
+! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'YOUR-URI'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+You code is being rejected because your local commits (changes) are not in sync with the remote history. This could happen if you are working on the same repo on different computers, or if several people are collaborating on the same repo (for group assignments). If computer A pushes changes to GitLab, and computer B also pushes, GitLab could not tell whether it should accept A's or B's changes, so push will be rejected. To fix this, simply git pull from remote before pushing to it:
+
+```
+git pull
+# resolve merge conflicts as needed
+# fill in merge message
+git push
+```
+
+When you do this, Git will load the remote changes that your local repo does not have. It will try to automatically resolve any conflicts, but occasionally you need to resolve them manually. If you’re prompted to do that after git pull, open the files in IntelliJ and make the necessary changes, then use git add . and git commit -m "..." commands to make a new commit before git push.
+
+[Here](https://duke.zoom.us/rec/share/55RoH5Xf1E9JYK_k4kDyZ6wwMJ65T6a8hyBPq6cOxRvt74iM19Y1ayW22FUeoW7t) is a video of CS201 Spring ‘20 Head UTAs explaining how to use Git in groups. The last part of the video mentions how to resolve merge conflicts like this.
+
+</details>
+
+<details>
 <summary>I get the message “nothing to commit, working tree clean” and “Everything up-to-date” when I try to commit and push.</summary>
 <br>
 You have not made any changes in your current repo. Check that you have saved all files.
@@ -250,11 +279,6 @@ You can use `pwd` in Terminal or Git Bash to show the current path of the repo y
 
 
 ## Advanced Git Issues
-
-<details>
-<summary>FSJKL</summary>
-<br>
-</details>
 
 <details>
 <summary>There is a weird window popping up when I am committing / merging. What is it and what do I do with it?</summary>
