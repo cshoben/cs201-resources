@@ -307,3 +307,5 @@ In Java, that would throw an `IndexOutOfBoundsException`. Instead, try using thi
 int[] list = new int[] {1, 2, 3};
 int last = list[list.length-1];
 ```
+
+Written by Matthew Giglio, E'23
