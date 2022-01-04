@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-This guide was adapted from a Troubleshooting guide created by Charles Lyu (T'21).
+This guide was adapted from a Troubleshooting guide created by Charles Lyu (T'21). 
 
 ## VSCode + Java
 
@@ -22,12 +22,14 @@ TBD. Please post your question on Ed for further assistance.
 
 <details>
 <summary>I get the error “Permission denied (publickey)” when cloning the repo from GitLab with an SSH URI:</summary>
+
 ```
 Permission denied (publickey).
 fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
 ```
+
 <br>
 
 Special thanks to former CS201 Head UTA, Morton Mo, for this section of the guide.
@@ -51,14 +53,12 @@ Then, on the “Settings” -> “SSH Keys” page on GitLab, verify the fingerp
 If the fingerprint does not match, you’re using the wrong key. Try uploading the correct public key to GitLab or generate a new one.
 
 Prior to generating a new key, make sure any other SSH keys are deleted. Navigate to your This PC (Windows) or /Users/yourUsername (Mac) folder, navigate to the .ssh folder, and delete all contents inside, which will allow you to start over from scratch.
-
-TODO DANIEL: installation guide link
 </details>
 
 <details>
 <summary>I get the following error when doing git add .: “fatal: Not a git repository (or any of the parent directories)”.</summary>
 <br>
-The error message means the current directory your Terminal/Bash/CMD is in is not a Git repository. **_Make sure you’re working in the correct directory: it should be the root of your project folder for this specific assignment_**, typically named after the project name. 
+The error message means the current directory your Terminal/Bash/CMD is in is not a Git repository. **Make sure you’re working in the correct directory: it should be the root of your project folder for this specific assignment** , typically named after the project name. 
 
 In particular, make sure you’re NOT in the src folder, and NOT in a generic workspace for the course (e.g. “CS201”).
 
@@ -70,25 +70,31 @@ If you cloned the project repository correctly, you should see `(main)` appear a
 <details>
 <summary>I accidentally downloaded the code as a ZIP file. How can I set up the Git repo so that I can push my work to Git?</summary>
 <br>
-First, make sure you have actually forked the repo (so that it’s under your own namespace and not the 201fall20 namespace). Refer to this document for instructions.
+First, make sure you have actually forked the repo (so that it’s under your own namespace and not the 201fall20 namespace). Refer to the project workflow for instructions.
 
 Open a Terminal or CMD and navigate to your directory. Make sure you’re in the root folder of your project: it should contain a src subdirectory which has all the Java files.
 
 Then use the following commands:
 
+```
 git init
 git remote add origin <your-project-URI>
 git add .
 git commit -m "Initial commit"
 git push -f -u origin master
+```
 
-Replacing <your-project-URI> with the SSH URI of your project, which can be copied from the GitLab project home page (refer to Step 2 here). Make sure the SSH URI looks like 
-git@coursework.cs.duke.edu:firstname.lastname/projectname.git 
+Replacing `<your-project-URI>` with the SSH URI of your project, which can be copied from the GitLab project home page (see Step 2 of the Project Workflow guide). Make sure the SSH URI looks like:
+
+`git@coursework.cs.duke.edu:firstname.lastname/projectname.git`
+
 (Make sure it has your own namespace and not 201fall20!)
 
 These commands will initialize the directory as a Git repository and link it to the remote repo.
 
 Careful: Don’t leave out the “-f -u” in git push! This means the git push command here is forced, which means it will override any changes you made in the remote repository on GitLab. If you’ve made changes there (via another computer probably) and you want to keep them, manually put the changes into the files on your local computer first.
+
+**If all of the above does not work, then copy your modified files into a separate folder and start over with cloning your fork/local copy of the project, then copy and paste in your code.**
 </details>
 
 <details>
@@ -174,5 +180,9 @@ git push
 - If you would like to learn more about Git merge conflicts, feel free to watch the video [here](https://duke.zoom.us/rec/play/SaYwuDmE_e1ktnTdXyZFlUB4Je0jAp90JJsYpv6nGO_6xgn2eTFqcR9poqNQpKOqlswpyR54w5lkpw.jhA1Dob-5DIFNjdB?continueMode=true&_x_zm_rtaid=WRHafTqZSU-Bw07DppwXJg.1614437909258.5f6f5e1afb9e427d7e1e52e2574318f9&_x_zm_rhtaid=958) for your own edification. 
 
 </details>
+
+
+
+TODO DANIEL: installation guide + project workflow guide link everywhere
 
 
