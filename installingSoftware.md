@@ -1,23 +1,26 @@
 # Installing Software for CompSci 201
 
-You will need Java, IntelliJ IDEA and Git to complete work in Compsci 201. Installation of these is described below. The software runs on Mac and Windows machines.
+You will need Java, VS Code, and Git to complete work in Compsci 201. Installation of these is described below. While this software is also compatible with Linux, these instructions have only been tested on Mac and Windows machines.
 
 ## Installing Java and JShell
 
-At Duke we’re using the Liberica JDK developed by Bellsoft, based on the open-source OpenJDK. You may have other versions and/or sources of JDK on your local machine if you installed other programs, ***but you should use the latest version of Liberica JDK for CompSci 201***. The current version is JDK 15 as of January 2021 (some images may be for previous versions).
+At Duke, we’re using the Liberica JDK, which is developed by Bellsoft and based on the open-source OpenJDK. You may have other versions and/or sources of JDK on your local machine if you installed other programs, ***but you should use the latest version of Liberica JDK for CompSci 201***. The current latest version is JDK 17 as of December 2021 (though some included images may depict even older versions).
 
 The screenshots in this document are for Windows and the installer for Mac is different, but once you've selected the installer the instructions here should work for you.
 
-The steps below will install both Java and JShell on your computer, since JShell is now built-in with Java.
+The steps below will install both Java and JShell on your computer, since JShell is now built-in with the Java JDK.
 
 ### Download the JDK
 
-Go to https://bell-sw.com/ and click on “Current release”, as shown on the right. You will be directed to the download page.
+Go to https://bell-sw.com/pages/downloads/. Scroll down, and under "Download Liberica JDK," click on the “LTS/Current" tab. As of the time of writing, the current release is JDK 17.
 
-Choose the version of the installer for your OS: You should download the **PKG file for Mac**, and **MSI file for Windows**, as shown below. If you have **Apple Silicon/M1** or a **Surface Pro X**, be sure to change your version from x86 to **ARM**.
+Choose the version of the installer for your OS:
+- If you are using Windows, download the **MSI file** as shown below.
+  - If you have a **Surface Pro X** computer, be sure to change your version from x86 to **ARM** (to the left).
+- If you are using a Mac, download the **PKG file** as shown below.
+  - If you have an **Apple Silicon** (M1, M1X) processor, be sure to change your version from x86 to **ARM** (to the left).
 
 <div align="middle">
-  <img src="images/current_release.png" width="300" />
   <img src="images/JDK_options.png" width="600" /> 
 </div>
 
@@ -25,7 +28,7 @@ Choose the version of the installer for your OS: You should download the **PKG f
 
 Run the file you downloaded and you should see a setup wizard. Follow the steps and if you get a prompt asking for permissions, accept it.
 
-***We recommend not changing the installation path***. On Windows, that means you will be installing Java in a directory starting with `C:\Program Files\`. In this way, if you have any issues with Java or IntelliJ later in the course, the UTAs can identify issues more easily.
+***We recommend not changing the installation path***. On Windows, that means you will be installing Java in a directory starting with `C:\Program Files\`. This way, if you have any issues with Java or VS Code later in the course, the UTAs can identify issues more easily.
 
 <div align="middle">
   <img src="images/install_jdk_mac.png" width="400" />
@@ -50,47 +53,88 @@ If you encounter an error (e.g. “Command not found”), it probably means the 
   <img src="images/jshell_mac.png" width="400" />
 </div>
 
-***While JShell allows you to use basic Java functionality and expressions, it is not what we use for coursework in CompSci 201. Most of the coding will be done via IntelliJ IDEA, as described below.***
+***While JShell allows you to use basic Java functionality and expressions, it is not what we use for coursework in CompSci 201. Most of the coding will be done in VS Code, as described below.***
 
 You can type `/exit` to quit jshell in your terminal.
 
-## Installing IntelliJ IDEA Community Edition
+## Installing Visual Studio Code
 
-At Duke we will use the IntelliJ IDEA Integrated Development Environment (IDE) in CompSci 201. In the past we have used Eclipse, but we switched to IntelliJ in Fall 2019. You don't need to use IntelliJ in 201, as any other Java IDE such as Eclipse will work, though we recommend IntelliJ as the "official" IDE for CompSci 201.
+At Duke we will use Visual Studio Code as the official development environment (IDE) for CompSci 201. In the past we have used Eclipse and IntelliJ, but we are switching to VS Code in Spring 2022. This portion of the guide was made possible with support from Raj Kundu (T'22).
 
-This guide explains how to install IntelliJ IDEA and Git. The screenshots and explanations below are current as of December 2020.
+### Download Visual Studio Code
 
-***The current version of IntelliJ IDEA is 2020.3 as of December 2020. You can use any previous version, though we'll expect a version from 2020.***
+You can download the latest version of Visual Studio Code at https://code.visualstudio.com/. The download instructions should be on the front page of the website. This should download a .exe file for Windows or a .zip file for Mac - follow the instructions given for [Windows](https://code.visualstudio.com/docs/setup/windows) or [Mac](https://code.visualstudio.com/docs/setup/mac).
 
-### Download IntelliJ IDEA (Installer)
+### Launch and Configure Visual Studio Code
+After installation, you should be able to run Visual Studio Code and if so, you'll be greeted with a screen like the following. If you wish, you can further customize the screen (like the author has!) by going to File -> Preferences -> Settings.
 
-Access the download page from https://www.jetbrains.com/idea/download/. This could get you to a page like the one shown below, or to a similar page. ***Download the Community Edition***.
+<div align="middle">
+  <img src="images/vscode-splash.png" width="400" />
+</div>
 
-On a Mac this will download the file named `idealC-2020.3.1.dmg`, and on Windows it should be named `idealC-2020.3.1.exe` as shown to the right. Click on this to unpackage and run the IntelliJ installer (you may see a popup that asks you to allow your computer to open IntelliJ). Note: If you have a recent Mac using Apple Silicon, you may need to select that instead of the Intel option to download.
+In CompSci 201, you will mainly use “Open Folder” for assignments (large-scale Java projects) and create your own folder for APTs. Once you have worked on some projects with VS Code, a list of recently opened projects can be found under "Open Recent."
 
-### Run the Installer
+### Install VS Code Extensions for Java
 
-Running the installer will show a simple setup wizard. Follow the steps and wait until the installation finishes. We recommend using the default installation path when you’re prompted for one.
+1. Open the “Extensions” Pane of the Sidebar
+2. Search for “CS201”
+3. Click the blue “Install” button to install the “Duke CS201 Java Extension Pack” extension
 
-### Launch and Configure IntelliJ
+<div align="middle">
+  <img src="images/vscode-extensionpack_install.gif" width="600" />
+</div>
 
-After installation, you should be able to run IntelliJ IDEA Community Edition with a splash screen like the following. It may also direct you to a customization wizard: when prompted for plugin settings, use the default ones and don’t change any settings.
+### Organizing Your Code
 
-You should come to a launch page like the following. You can change the default dark theme to a light theme if you wish by going to customize at the left side menu.
+Unlike some other IDEs, VS Code works with folders, not "VS Code projects." Any folder/directory that exists on your computer can be opened in VS Code with `File > Open`. For this course, you’ll work with folders that each store a collection of related Java files that you will code, run, and test.
 
-In CompSci 201, you will mainly use “Open” for assignments (large-scale Java projects) and “Create New Project” for APTs. Once you have worked on some projects with IntelliJ, a list of recently opened projects will be shown on the left of the welcome screen.
+For CS 201, you should set up a folder to store your code related to this course. It should be
+1. in a location that you will remember
+2. in a format/structure that makes sense to you
 
-### Creating a First Project
+We recommend the following folder setup:
 
-While you don’t have to write any code for now, we highly recommend creating a first IntelliJ project to verify that IntelliJ is able to recognize the Java JDK.
+```
+▼ CS 201
+  ▼ APT
+    ▼ APT 1
+      - AccessLevel.java
+      - CirclesCountry.java
+    ▼ APT 2
+      - TxMsg.java
+      - ...
+  ▼ Projects
+    ▶ P0-Person201
+    ▶ P1-NBody
+    - ...
+```
+You do not have to create the individual subfolders under APTs or Projects yet - instead, you can create them throughout the course, as necessary.
 
-Click on “New Project” from the welcome screen. It should direct you to a dialog like this: Make sure the “**Project SDK**” dropdown menu shows “**15**” (or an older version on your computer). If you see “&lt;No SDK&gt;” instead, follow the troubleshooting document to set up the JDK in IntelliJ.
+### Testing VS Code + Java
 
-Once you verify the SDK, click “Next” until the final step where you need to give the project a name and location. Feel free to change its name or choose a different location to save the project, though it won’t be required (since this project is meant to be just a walkthrough of the process).
+While you don’t have to write any code for now, we highly recommend creating a first project to ensure that VS Code works properly with the Java JDK:
 
-Click “Finish” and you should be brought to the project workspace as shown below. Congrats! You created your first Java project.
+1. Create a temporary folder to house this project anywhere you would like
+    - For example, if you were using the file structure above, you might create a temporary folder under the `CS 201` folder called `Testing`
+    - A temporary folder in your Desktop or Documents folder works as well!
+2. Open VS Code, click `File > Open`, and navigate to the folder you just created.
+3. Create a new file using `File > New File`. Save it (`File > Save`) as `HelloWorld.java`.
+4. Paste the following code into `HelloWorld.java`:
+    ```java
+    public class HelloWorld {
+      public static void main(String[] args) {
+        System.out.println("Hello, world!"); 
+      }
+    }
+    ```
+5. Save `HelloWorld.java` and run it using either of the "Run" buttons highlighted below.
+<div align="middle">
+  <img src="images/vscode-runbuttons.png" width="600" />
+</div>
 
-For a quick introduction to the IntelliJ IDE, check out [this short (< 5 minute) video](https://www.youtube.com/watch?v=c0efB_CKOYo) by the developers along with [their getting started guide](https://www.jetbrains.com/help/idea/getting-started.html).  
+6. You should see the integrated terminal window pop up, and your program should run and print `Hello, world!` into the terminal.
+
+For a quick introduction to VS Code, you can skim [these](https://code.visualstudio.com/docs/introvideos/basics) official introductory resources. If you choose to do this, just watching the first one or two videos (<10 min.) should be more than enough!
 
 ## Installing Git and Configuring GitLab
 
@@ -98,7 +142,7 @@ Git is the most widely used version control system. Git allows you to keep track
 
 ## Installing Git
 
-**TLDR**: You can watch our UTAs go over the following Git installation process using Windows and Mac [here](#git-setup-videos) under the videos "Mac_SSH_Key" and "Windows_SSH_Key."
+**NOTE**: You can watch our UTAs go over the following Git installation process using Windows and Mac [here](#git-setup-videos) under the videos "Mac_SSH_Key" and "Windows_SSH_Key."
 
 Head to https://git-scm.com/downloads and download the version of Git for your platform: Mac, Windows, Linux. Install this on your machine. Use default settings when prompted.
 
@@ -110,7 +154,7 @@ After you’ve installed Homebrew, run the command `brew install git`.
 
 ### Setting Up Credentials in Git
 
-Git can be used either on the command line (like Terminal in Mac and CMD on Windows), via the Git GUI, or via IntelliJ’s built-in Git integration. **However, we strongly recommend that you use Git on the command line**. 
+Git can be used either on the command line (like Terminal in Mac and CMD on Windows), via the Git GUI, or via VS Code's built-in Git integration. **However, we strongly recommend that you use Git on the command line**. 
 
 On a Mac, use the Terminal application, on Windows use either the Command Prompt that comes with the OS or the Git Bash Shell that is part of the Windows Git install.
 
@@ -137,7 +181,7 @@ https://coursework.cs.duke.edu/help/ssh/index.md
 
 Note that you will use the commands shown in the documentation (subject to your OS) to copy the ***public*** part of your SSH key, ***which should start with “ssh-ed25519”***. You will then login to your GitLab account at https://coursework.cs.duke.edu, enter “Settings” from the top right corner, and then paste the public key by following the instructions in the documentation.
 
-**NOTE**: You must use https://coursework.cs.duke.edu and log in via Shibboleth if you want this process to work. To know that this worked, your GitLab username will be @firstname.lastname, not @netID
+**NOTE**: You must use https://coursework.cs.duke.edu and log in via Shibboleth if you want this process to work. To know that this worked, your GitLab username will be **@firstname.lastname**, _NOT_ @netID
 
 To verify that everything has been set up perfectly, use the following command:
 
@@ -145,7 +189,7 @@ To verify that everything has been set up perfectly, use the following command:
 
 If you see a welcoming message with your name, you’re done! Enjoy!
 
-Note that if you see this prompt instead:
+Note that if you see a similar prompt to this instead:
 <div align="middle">
   <img src="images/git_host_authentication.jpg" width="300" />
 </div>
