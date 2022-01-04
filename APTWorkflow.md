@@ -1,7 +1,7 @@
 # APT Workflow
 APTs are small-scale “problem sets” where you have to write a Java method to solve a particular problem. Unlike assignments (projects), APTs do not come with starter codes for you to clone and import. Instead, for each APT problem, you will create your own Java file (using an empty method stub as a starting point) and upload that to a testing server. This guide goes over best practices for organizing APT code.
 
-In particular, as mentioned in the installation guide, we recommend creating a single directory where you will store subdirectories containing each APT set, as shown below:
+In particular, as mentioned in the [installation guide](./installingSoftware.md), we recommend creating a single directory where you will store subdirectories containing each APT set, as shown below:
 
 ```
 ▼ CS 201
@@ -45,7 +45,7 @@ You can only run a Java class if it has a `main` method (more on that later in t
 To run a Java class, either right-click the file and click `Run Java` or click the triangle in the upper right.
 
 <div align="middle">
-  <img src="images/apt-stub.png" width="500" />
+  <img src="images/apt-run.png" width="500" />
 </div>
 
 ## (Optional) Creating a `main` method for APTs
