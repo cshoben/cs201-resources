@@ -1,7 +1,5 @@
 # Project Workflow
-This guide will walk you through how to complete Java assignments/projects in Compsci 201 by using P0: Person201 as an example. Before starting, you should have installed all the necessary software (Java Liberica JDK, Git Bash, Visual Studio Code) as explained in this guide. You should have also installed a personal SSH key, as explained in the previous version of this guide.
-
-TODO DANIEL: ADD IN LINK ABOVE.
+This guide will walk you through how to complete Java assignments/projects in Compsci 201 by using P0: Person201 as an example. Before starting, you should have installed all the necessary software (Java Liberica JDK, Git Bash, Visual Studio Code) as explained in [this guide](./installingSoftware.md). You should have also installed a personal SSH key, as explained in the previous version of this guide.
 
 **NOTE**: If you wish, you may also follow these instructions in [video format.](#tutorial-videos)
 
@@ -98,9 +96,7 @@ Make sure the SSH URI is for the forked repo, i.e. has your own name in it! If i
 
 Git should have now created a new directory `“p0-person”`  within the current directory, with all files from the remote repo stored in it. Once you finish cloning, typing `ls` in Terminal/Git Bash or `dir` in Command Prompt should show the new directory with the project name. Alternatively, you can verify the existence of the project directory in the Finder or File Explorer.
 
-If you encounter any errors or do not see the new directory, refer to the [Troubleshooting Document](https://docs.google.com/document/d/1Ce7HFLmEGsRMwGXGIxt5TpLHmjmjafHn1jNf7MRO8qw/edit).
-
-TODO DANIEL: REPLACE WITH MARKDOWN
+If you encounter any errors or do not see the new directory, refer to the [Troubleshooting Document](./troubleshooting.md).
 
 ## Alternative Method: via VS Code
 
