@@ -4,9 +4,11 @@ This guide was adapted from a Troubleshooting guide created by Charles Lyu (T'21
 
 ## VSCode + Java
 
-TBD. Please post your question on Ed for further assistance.
+TBD. Please post your question on Ed for further assistance. 
 
-## Git
+## Git - FAQ
+
+These are some of the frequently asked questions we get with Git. We'll move around questions between the FAQ and Comprehensive question as we get feedback.
 
 <details>
 <summary>When trying to install Git, I am having difficulties with Homebrew</summary>
@@ -18,95 +20,6 @@ TBD. Please post your question on Ed for further assistance.
 
 - If the student is having any difficulty with their `bin` folder not existing or any other fatal directory issues, refer the student to OIT; their machine needs serious maintenance and restructuring.
 
-</details>
-
-<details>
-<summary>I get the error “Permission denied (publickey)” when cloning the repo from GitLab with an SSH URI:</summary>
-
-```
-Permission denied (publickey).
-fatal: Could not read from remote repository.
-Please make sure you have the correct access rights
-and the repository exists.
-```
-
-<br>
-
-Special thanks to former CS201 Head UTA, Morton Mo, for this section of the guide.
-
-You have either not created an SSH Key on your computer, or have not pasted it into your GitLab profile correctly. Refer to the installation guide on how to set up SSH Keys. **Make sure you upload the public key to https://coursework.cs.duke.edu, not https://gitlab.cs.duke.edu.**
-
-If you have already done so but still get the error, verify the fingerprints of your SSH keys match locally and remotely. Run the following commands in your computer's Terminal (or Git Bash on Windows):
-
-```
-ssh-keygen -E md5 -lf ~/.ssh/id_ed25519.pub
-ssh-keygen -E md5 -lf ~/.ssh/id_ed25519
-```
-
-Both outputs should match.
-Then, on the “Settings” -> “SSH Keys” page on GitLab, verify the fingerprint matches with the output of commands above:
-
-<div align="middle">
-  <img src="images/troubleshooting-fingerprint.png" width="400" />
-</div>
-
-If the fingerprint does not match, you’re using the wrong key. Try uploading the correct public key to GitLab or generate a new one.
-
-Prior to generating a new key, make sure any other SSH keys are deleted. Navigate to your This PC (Windows) or /Users/yourUsername (Mac) folder, navigate to the .ssh folder, and delete all contents inside, which will allow you to start over from scratch.
-</details>
-
-<details>
-<summary>I get the following error when doing git add .: “fatal: Not a git repository (or any of the parent directories)”.</summary>
-<br>
-The error message means the current directory your Terminal/Bash/CMD is in is not a Git repository. **Make sure you’re working in the correct directory: it should be the root of your project folder for this specific assignment** , typically named after the project name. 
-
-In particular, make sure you’re NOT in the src folder, and NOT in a generic workspace for the course (e.g. “CS201”).
-
-In a Mac Terminal or Git Bash on Windows, you can type `pwd` to show the current path. 
-
-If you cloned the project repository correctly, you should see `(main)` appear after your project path, indicating you are in a Git repository. If this is not the case AND you are sure you are in the right repository, it means your project directory was not initialized as a Git repository, probably because you didn’t create it properly or accidentally deleted some files. See the next bullet point (I accidentially downloaded the code as a ZIP file...) for advice.
-</details>
-
-<details>
-<summary>I accidentally downloaded the code as a ZIP file. How can I set up the Git repo so that I can push my work to Git?</summary>
-<br>
-First, make sure you have actually forked the repo (so that it’s under your own namespace and not the 201fall20 namespace). Refer to the project workflow for instructions.
-
-Open a Terminal or CMD and navigate to your directory. Make sure you’re in the root folder of your project: it should contain a src subdirectory which has all the Java files.
-
-Then use the following commands:
-
-```
-git init
-git remote add origin <your-project-URI>
-git add .
-git commit -m "Initial commit"
-git push -f -u origin master
-```
-
-Replacing `<your-project-URI>` with the SSH URI of your project, which can be copied from the GitLab project home page (see Step 2 of the Project Workflow guide). Make sure the SSH URI looks like:
-
-`git@coursework.cs.duke.edu:firstname.lastname/projectname.git`
-
-(Make sure it has your own namespace and not 201fall20!)
-
-These commands will initialize the directory as a Git repository and link it to the remote repo.
-
-Careful: Don’t leave out the “-f -u” in git push! This means the git push command here is forced, which means it will override any changes you made in the remote repository on GitLab. If you’ve made changes there (via another computer probably) and you want to keep them, manually put the changes into the files on your local computer first.
-
-**If all of the above does not work, then copy your modified files into a separate folder and start over with cloning your fork/local copy of the project, then copy and paste in your code.**
-</details>
-
-<details>
-<summary>I get the following error when doing git add .: “fatal: Not a git repository (or any of the parent directories)”.</summary>
-<br>
-The error message means the current directory your Terminal/Bash/CMD is in is not a Git repository. **_Make sure you’re working in the correct directory: it should be the root of your project folder for this specific assignment_**, typically named after the project name. 
-
-In particular, make sure you’re NOT in the src folder, and NOT in a generic workspace for the course (e.g. “CS201”).
-
-In a Mac Terminal or Git Bash on Windows, you can type `pwd` to show the current path. 
-
-If you cloned the project repository correctly, you should see `(main)` appear after your project path, indicating you are in a Git repository. If this is not the case AND you are sure you are in the right repository, it means your project directory was not initialized as a Git repository, probably because you didn’t create it properly or accidentally deleted some files. See the next bullet point (I accidentially downloaded the code as a ZIP file...) for advice.
 </details>
 
 <details>
@@ -178,6 +91,197 @@ git push
 - In the event that Git is not able to automatically resolve the issue, the student will have to resolve the issue manually. Running the three `git add .`, `git commit -m "comment"`, and `git push` commands should resolve the issue.
 
 - If you would like to learn more about Git merge conflicts, feel free to watch the video [here](https://duke.zoom.us/rec/play/SaYwuDmE_e1ktnTdXyZFlUB4Je0jAp90JJsYpv6nGO_6xgn2eTFqcR9poqNQpKOqlswpyR54w5lkpw.jhA1Dob-5DIFNjdB?continueMode=true&_x_zm_rtaid=WRHafTqZSU-Bw07DppwXJg.1614437909258.5f6f5e1afb9e427d7e1e52e2574318f9&_x_zm_rhtaid=958) for your own edification. 
+
+</details>
+
+## Git - Comprehensive
+
+<details>
+<summary>I get the error “Permission denied (publickey)” when cloning the repo from GitLab with an SSH URI:</summary>
+
+```
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+Special thanks to former CS201 Head UTA, Morton Mo, for this section of the guide.
+
+You have either not created an SSH Key on your computer, or have not pasted it in to your GitLab profile correctly. Refer to the installation guide on how to set up SSH Keys. **Make sure you upload the public key to https://coursework.cs.duke.edu, not https://gitlab.cs.duke.edu.**
+
+If you have already done so but still get the error, verify the fingerprints of your SSH keys match locally and remotely. Run the following commands in your computer's Terminal (or Git Bash on Windows):
+
+```
+ssh-keygen -E md5 -lf ~/.ssh/id_ed25519.pub
+ssh-keygen -E md5 -lf ~/.ssh/id_ed25519
+```
+
+Both outputs should match.
+Then, on the “Settings” -> “SSH Keys” page on GitLab, verify the fingerprint matches with the output of commands above:
+
+<div align="middle">
+  <img src="images/troubleshooting-fingerprint.png" width="400" />
+</div>
+
+If the fingerprint does not match, you’re using the wrong key. Try uploading the correct public key to GitLab or generate a new one.
+
+Prior to generating a new key, make sure any other SSH keys are deleted. Navigate to your This PC (Windows) or /Users/yourUsername (Mac) folder, navigate to the .ssh folder, and delete all contents inside, which will allow you to start over from scratch.
+</details>
+
+<details>
+<summary>I get the following error when doing git add .: “fatal: Not a git repository (or any of the parent directories)”.</summary>
+<br>
+
+The error message means the current directory your Terminal/Bash/CMD is in is not a Git repository. _**Make sure you’re working in the correct directory: it should be the root of your project folder for this specific assignment**_, which is typically named after the project name. 
+
+In particular, make sure you’re NOT in the src folder, and NOT in a generic workspace for the course (e.g. “CS201”).
+
+In a Mac Terminal or Git Bash on Windows, you can type `pwd` to show the current path. 
+
+If you cloned the project repository correctly, you should see `(main)` appear after your project path, indicating you are in a Git repository. If this is not the case AND you are sure you are in the right repository, it means your project directory was not initialized as a Git repository, probably because you didn’t create it properly or accidentally deleted some files. See the next bullet point (I accidentially downloaded the code as a ZIP file...) for advice.
+</details>
+
+<details>
+<summary>I accidentally downloaded the code as a ZIP file. How can I set up the Git repo so that I can push my work to Git?</summary>
+<br>
+
+First, make sure you have actually forked the repo (so that it’s under your own namespace and not the 201fall20 namespace or some other variant). Refer to the project workflow for instructions.
+
+Open a Terminal or CMD and navigate to your directory. Make sure you’re in the root folder of your project: it should contain a src subdirectory which has all the Java files.
+
+Then use the following commands:
+
+```
+git init
+git remote add origin <your-project-URI>
+git add .
+git commit -m "Initial commit"
+git push -f -u origin master
+```
+
+Replacing `<your-project-URI>` with the SSH URI of your project, which can be copied from the GitLab project home page (see Step 2 of the Project Workflow guide). Make sure the SSH URI looks like:
+
+`git@coursework.cs.duke.edu:firstname.lastname/projectname.git`
+
+(Make sure it has your own namespace and not 201fall20 or some other variant!)
+
+These commands will initialize the directory as a Git repository and link it to the remote repo.
+
+Careful: Don’t leave out the “-f -u” in git push! This means the git push command here is forced, which means it will override any changes you made in the remote repository on GitLab. If you’ve made changes there (via another computer probably) and you want to keep them, manually put the changes into the files on your local computer first.
+
+**FINALLY: If all of the above does not work, then copy your modified files into a separate folder and start over with cloning your fork/local copy of the project, then copy and paste in your code.**
+
+</details>
+
+<details>
+<summary>I get the following error when doing git push: “You are not allowed to push code to this project”.</summary>
+<br>
+
+```
+> GitLab: You are not allowed to push code to this project.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+You do not have permission to push to this remote repo. It’s probably because you cloned the repo from the 201 namespace (e.g. 201fall20), instead of your personal, forked repo.
+
+- First, make sure you have actually forked the repo. Refer to this document for instructions.
+  - Copy the SSH URI from the “Clone” button to the right of your GitLab project home page (refer to Step 2 here). 
+  - It should look like `git@coursework.cs.duke.edu:firstname.lastname/projectname.git` (Make sure it has your own namespace and not 201fall20!)
+
+In a Terminal or CMD, navigate to your local project folder, and use the following command to change the remote repository to use the SSH URI:
+
+`git remote set-url origin <SSH-URI>`
+
+Replace `<SSH-URI>` with the actual SSH URI of your GitLab project that you just copied.
+You can then use
+
+`git remote get-url origin`
+
+To verify the URI is correct. If yes, try pushing again.
+
+</details>
+
+<details>
+<summary>When I try to push to Git, I get a “Git Credentials” dialog asking for my username and password. Then I get an “HTTP Basic: Access denied” error:</summary>
+<br>
+
+```
+remote: HTTP Basic: Access denied
+fatal: Authentication failed for 'YOUR-URI'
+```
+
+You are using the HTTP protocol instead of the SSH protocol, i.e. you cloned the repo using the HTTPS URI. 
+
+Copy the SSH URI from the “Clone” button to the right of your GitLab project home page (refer to Step 2 here). It should look like 
+`git@coursework.cs.duke.edu:firstname.lastname/projectname.git`
+(Make sure it has your own namespace and not 201fall20 or some other variant!)
+
+Then, in a Terminal or CMD, navigate to your project directory and use the following command to change the remote repository to use the SSH URI:
+
+`git remote set-url origin <SSH-URI>`
+ 
+Replace `<SSH-URI>` with the actual SSH URI of your GitLab project.
+You can then use
+
+`git remote get-url origin`
+
+To verify the URI is correct.
+
+</details>
+
+<details>
+<summary>I get the message “nothing to commit, working tree clean” and “Everything up-to-date” when I try to commit and push.</summary>
+<br>
+You have not made any changes in your current repo. Check that you have saved all files.
+
+If you’re certain you made some changes but this error still occurs, you may have cloned multiple copies of the same repo on your computer. Make sure you’re working on the correct one.
+
+You can use `pwd` in Terminal or Git Bash to show the current path of the repo you’re trying to push. You can also see the path of your VS Code project by right clicking on the File Explorer and clicking "Copy Path." Verify the two paths are the same.
+
+<div align="middle">
+  <img src="images/troubleshooting-copypath.png" width="400" />
+</div>
+
+</details>
+
+
+## Advanced Git Issues
+
+<details>
+<summary>FSJKL</summary>
+<br>
+</details>
+
+<details>
+<summary>There is a weird window popping up when I am committing / merging. What is it and what do I do with it?</summary>
+<br>
+This is a command-line editor. This usually happens when you forget to specify the -m flag when committing, so Git did not get your commit message. 
+Depending on your configurations, it could either be a nano editor (default for Mac), a vi editor (default for some Linux distributions), or an emacs editor. To save the message and exit, follow these steps:
+
+- Your Terminal window should tell you what editor you are currently using. Depending on this, move to different steps
+- If vi(m) is shown, follow this tutorial: https://www.cyberciti.biz/faq/linux-unix-exit-vim-editor/ 
+- If nano is shown, follow this tutorial: https://wiki.gentoo.org/wiki/Nano/Basics_Guide
+- If emacs is shown, follow this tutorial: https://ftp.gnu.org/old-gnu/Manuals/emacs/html_node/emacs_18.html
+</details>
+
+
+<details>
+<summary>I get the error “pathspec ‘...’ does not match any file(s) known to git” when using git commit:</summary>
+<br>
+
+```
+> git commit -m “my commit message”
+error: pathspec 'commit' does not match any file(s) known to git
+error: pathspec 'message' does not match any file(s) known to git
+```
+
+- Make sure you included the -m in the git commit command.
+- Make sure you put the commit message in either single or double quotes.
+- Make sure the quotation marks are regular ones (""), not “smart” ones (“”). This issue can occur if you copied the commands from Google Docs or other text editors. To fix this, delete the quotation marks from Terminal/Command Prompt and then type them again manually.
 
 </details>
 
