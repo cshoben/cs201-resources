@@ -128,9 +128,7 @@ You should now have access to the contents of the folder!
 
 The assignment writeup document will tell you what you have to do. Most of the work will be completing existing Java classes given in the starter code, but sometimes you will also have to create your own classes/Java files. 
 
-Many assignments come with executable classes, typically named as “Driver” or “Benchmark”, that you can run to test the correctness of your code or generate results for analysis questions. Refer to the “Running your code” section on how to execute them.
-
-TODO DANIE: LINK TO RUNNING YOUR CODE
+Many assignments come with executable classes, typically named as “Driver” or “Benchmark”, that you can run to test the correctness of your code or generate results for analysis questions. Refer to the [“Running your code” section on the APT guide](./APTWorkflow.md#running-your-code) on how to execute them.
 
 # Step 5: Pushing your Code to Git
 
