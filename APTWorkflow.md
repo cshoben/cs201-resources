@@ -48,31 +48,27 @@ To run a Java class, either right-click the file and click `Run Java` or click t
   <img src="images/apt-stub.png" width="500" />
 </div>
 
-## REMAINING THINGS HERE: 
-FILL IN REST: https://docs.google.com/document/d/1dlEwDwiIyEQFxXOHS_zY-Qojx4djl4p2Ud16qpeb7gY/edit#
+## (Optional) Creating a `main` method for APTs
+As mentioned above, you do NOT need to run your code for APTs; as such, a `main` method is not required. Nevertheless, if you’re having errors, having a `main` method is extremely helpful for debugging your code.
 
-Note to Matthew, the following students (especially Git repo) are not as important.
+To create a `main` method, add the following method within the class (it should not be nested within another method):
 
-## (Optional) Creating a main method for APTs
-As mentioned above, you do NOT need to run your code for APTs; as such, a main method is not required. Nevertheless, if you’re having errors, having a main method is extremely helpful for debugging your code.
-
-To create a main method, add the following method within the class (it should not be nested within another method):
-
-```
+```java
 public static void main(String[] args) {
     // code here
 }
 ```
 
-And then replace // code here with code that you want to execute.
+And then replace `// code here` with code that you want to execute.
 
 For APTs, you typically want to run the method you wrote on some specific inputs. Thus, your main method will mainly consist of the following steps:
-Declaring input variables (parameters of the APT method) and initializing them with values
-Creating a new object of the APT class by using new APTNameHere()
-Calling the method and storing the return value in a variable
-Print out the return value using System.out.println()
+- Declaring input variables (parameters of the APT method) and initializing them with values
+- Creating a new object of the APT class by using `new APTNameHere()`
+- Calling the method and storing the return value in a variable
+- Print out the return value using `System.out.println()`
 
-As a concrete example, here’s a Java class for the the Starter APT with a main method for debugging:
+As a concrete example, here’s a Java class for the the [Starter APT](https://www2.cs.duke.edu/csed/newapt/starter.html) with a main method for debugging:
+```java
 public class Starter {
 public int begins(String[] words, String first) {
 // replace this code 
@@ -86,47 +82,52 @@ int ans = obj.begins(words, first);
 System.out.println(ans);
 }
 }
+```
 
-Note that if the return value is an array, you can use Arrays.toString to print out the contents of the array:
+Note that if the return value is an array, you can use `Arrays.toString()` to print out the contents of the array:
+```java
+// a is an array
+System.out.println(Arrays.toString(a));
+```
+**Remember you can use a main method to test you code, but it must be removed or commented out before you submit it to the APT tester.**
 
-    // a is an array
-    System.out.println(Arrays.toString(a));
+## (Optional) Creating a Git Repo for APTs
+Using Git for APTs is not required, but ***we recommend that you create a Git repo for APTs and push your work to GitLab regularly.*** This helps preserve your work in a catastrophic computer failure.
 
-Remember you can use a main method to test you code, but it must be removed or commented out before you submit it to the APT tester.
+### Creating a Git repo without an existing project
+The following steps are for starting afresh on the APT, when you don’t have any files on your computer. ***This is the recommended workflow: create a repository on GitLab first, clone the empty repo to your computer, then create an IntelliJ project there.***
 
-(Optional) Creating a Git Repo for APTs
-Using Git for APTs is not required, but we recommend that you create a Git repo for APTs and push your work to GitLab regularly. This helps preserve your work in a catastrophic computer failure.
-Creating a Git repo without an existing IntelliJ project
-The following steps are for starting afresh on the APT, when you don’t have any files on your computer. This is the recommended workflow: create a repository on GitLab first, clone the empty repo to your computer, then create an IntelliJ project there.
+1. Create a new repository in GitLab: https://coursework.cs.duke.edu/projects/new
+Remember to ***make your repository private!!!***
+2. Open a Terminal or CMD/Git Bash shell, and use the `cd` command to navigate to where you want to save the project, typically your CS201 workspace.
+3. Once you’re in the directory, type
+```bash
+git clone <your-project-URI>
+```
+Replace `<your-project-URI>` with the SSH URI of your GitLab project (obtained from the “Clone” option on your project’s home page).
 
-Create a new repository in GitLab: https://coursework.cs.duke.edu/projects/new
-Remember to make your repository private!!!
-Open a Terminal or CMD/Git Bash shell, and use the cd command to navigate to where you want to save the project, typically your CS201 workspace.
-Once you’re in the directory, type
+4. The git clone command should have created a new directory in your CS201 workspace for the Git repo. 
 
-    git clone <your-project-URI>
+When you make changes (e.g. made progress on a few APT problems), remember to push them to Git regularly using the standard command sequence outlined in the [Project Worflow documentation](https://coursework.cs.duke.edu/201-public-documentation/resources-201/-/blob/vscode-edits/projectWorkflow.md).
 
-Replacing <your-project-URI> with the SSH URI of your GitLab project (obtained from the “Clone” option on your project’s home page).
-The git clone command should have created a new directory in your CS201 workspace for the Git repo. Create a new IntelliJ project in this directory.
-
-When you make changes (e.g. made progress on a few APT problems), remember to push them to Git regularly using the standard command sequence mentioned above.
-
-Creating a Git repo with an existing IntelliJ project on the local machine
+### Creating a Git repo with an existing project on the local machine
 This section is for the case where you already have some work done on your computer, but now want to create a GitLab repository and upload your work there.
 
-Create a new repository in GitLab: https://coursework.cs.duke.edu/projects/new
-Remember to make your repository private!!!
-Open a Terminal or CMD/Git Bash shell, and use the cd command to navigate to your directory. This should be the project directory, not the general CS201 workspace. 
-Make sure you’re in the root folder of your project: it should contain a src subdirectory which has all the Java files.
-Once you’re in the directory, use the following commands:
+1. Create a new repository in GitLab: https://coursework.cs.duke.edu/projects/new
+Remember to ***make your repository private!!!***
+2. Open a Terminal or CMD/Git Bash shell, and use the cd command to navigate to your directory. This should be the project directory, not the general CS201 workspace. 
+Make sure you’re in the root folder of your project: it should contain a `src` subdirectory which has all the Java files.
+3. Once you’re in the directory, use the following commands:
 
-`git init
+```bash
+git init
 git remote add origin <your-project-URI>
 git add .
 git commit -m "Initial commit"
-git push -u origin master`
+git push -u origin master
+```
 
-Replacing <your-project-URI> with the SSH URI of your GitLab project (obtained from the “Clone” option on your project’s home page). These commands will initialize the directory as a Git repository and link it to the remote repo.
-Note the “-u origin master” arguments for git push. These are necessary in this particular scenario, as they tell Git which remote repository and branch to push to.
+Replacing `<your-project-URI>` with the SSH URI of your GitLab project (obtained from the “Clone” option on your project’s home page). These commands will initialize the directory as a Git repository and link it to the remote repo.
+Note the `"-u origin master”` arguments for git push. These are necessary in this particular scenario, as they tell Git which remote repository and branch to push to.
 
-You should now be able to see contents of the repository on GitLab. When you make additional changes, you can use use the standard command sequence for pushing, without the “-u origin master” part.
+You should now be able to see contents of the repository on GitLab. When you make additional changes, you can use use the standard command sequence for pushing, without the `“-u origin master”` part.
