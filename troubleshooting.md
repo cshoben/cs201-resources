@@ -28,7 +28,7 @@ These are some of the frequently asked questions we get with Git. We'll move aro
 
 - If the student has been able to use Git successfully in the past, then they **cloned with HTTPS instead of SSH**. To resolve this issue, have them save the code they have written so far locally (*not in IdeaProjects*), repull the project via SSH, and then replace the files in their new starter code with their locally stored code.
 
-- If the student has never used Git successfully, then they need to **reconfigure their SSH key**. When doing so, walk through them through the steps detailed in the key configuration guide [here](https://coursework.cs.duke.edu/cs201projects/resources-201/-/blob/main/installingSoftware.md) and lend attention to two important details:
+- If the student has never used Git successfully, then they need to **reconfigure their SSH key**. When doing so, walk through them through the steps detailed in the key configuration guide [here](./installingSoftware.md) and lend attention to two important details:
 
     1. The student must set save the key to a default location (press "Enter" once) and then set a default password (press "Enter" twice)
 
@@ -160,7 +160,7 @@ git commit -m "Initial commit"
 git push -f -u origin master
 ```
 
-Replacing `<your-project-URI>` with the SSH URI of your project, which can be copied from the GitLab project home page (see Step 2 of the Project Workflow guide). Make sure the SSH URI looks like:
+Replacing `<your-project-URI>` with the SSH URI of your project, which can be copied from the GitLab project home page (see Step 2 of the [Project Workflow guide](./projectWorkflow.md)). Make sure the SSH URI looks like:
 
 `git@coursework.cs.duke.edu:firstname.lastname/projectname.git`
 
@@ -305,9 +305,3 @@ error: pathspec 'message' does not match any file(s) known to git
 - Make sure the quotation marks are regular ones (""), not “smart” ones (“”). This issue can occur if you copied the commands from Google Docs or other text editors. To fix this, delete the quotation marks from Terminal/Command Prompt and then type them again manually.
 
 </details>
-
-
-
-TODO DANIEL: installation guide + project workflow guide link everywhere
-
-
