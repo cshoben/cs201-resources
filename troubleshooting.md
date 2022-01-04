@@ -277,9 +277,6 @@ You can use `pwd` in Terminal or Git Bash to show the current path of the repo y
 
 </details>
 
-
-## Advanced Git Issues
-
 <details>
 <summary>There is a weird window popping up when I am committing / merging. What is it and what do I do with it?</summary>
 <br>
