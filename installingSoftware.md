@@ -12,7 +12,7 @@ The steps below will install both Java and JShell on your computer, since JShell
 
 ### Download the JDK
 
-Go to https://bell-sw.com/pages/downloads/. Scroll down, and under "Download Liberica JDK," click on the “LTS/Current" tab. As of the time of writing, the current release is JDK 17.
+Go [here](https://bell-sw.com/pages/downloads/#/java-17-lts%20/%20current). Scroll down, and under "Download Liberica JDK," click on the “LTS/Current" tab. As of the time of writing, the current release is JDK 17.
 
 Choose the version of the installer for your OS:
 - If you are using Windows, download the **MSI file** as shown below.
