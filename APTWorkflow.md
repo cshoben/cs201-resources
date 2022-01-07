@@ -108,7 +108,7 @@ Replace `<your-project-URI>` with the SSH URI of your GitLab project (obtained f
 
 4. The git clone command should have created a new directory in your CS201 workspace for the Git repo. 
 
-When you make changes (e.g. made progress on a few APT problems), remember to push them to Git regularly using the standard command sequence outlined in the [Project Worflow documentation](https://coursework.cs.duke.edu/201-public-documentation/resources-201/-/blob/vscode-edits/projectWorkflow.md).
+When you make changes (e.g. made progress on a few APT problems), remember to push them to Git regularly using the standard command sequence outlined in the [Project Workflow documentation](https://coursework.cs.duke.edu/201-public-documentation/resources-201/-/blob/main/projectWorkflow.md).
 
 ### Creating a Git repo with an existing project on the local machine
 This section is for the case where you already have some work done on your computer, but now want to create a GitLab repository and upload your work there.
