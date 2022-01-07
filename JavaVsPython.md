@@ -191,7 +191,7 @@ else if (thisCondition || thatCondition) {
     System.out.println("something");
 }
 ```
-Boolean operators like `<`, `>`, `<=`, and `>=` are identical for both languages. Similarly, addition, subtraction, multiplication, and the modulo operator are the same (`+`, `-`, `*`, `%`). Division and exponentiation, however, are different. Python float divides numbers with `/`, integer divides with `//`, and exponentiates numbers with `**`:
+Boolean operators like `<`, `>`, `==`, `<=`, and `>=` are identical for both languages. Similarly, addition, subtraction, multiplication, and the modulo operator are the same (`+`, `-`, `*`, `%`). Division and exponentiation, however, are different. Python float divides numbers with `/`, integer divides with `//`, and exponentiates numbers with `**`:
 
 ```python
 x = 3
