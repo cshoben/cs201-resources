@@ -198,7 +198,7 @@ Then that means that your computer doesn't recognize coursework.cs.duke.edu yet.
 ## Git Setup Videos
 
 ### Mac
-![](softwareInstallationVideos/Mac/videos/Mac_SSH_Key_2.0.mp4)
+![](softwareInstallationVideos/Mac/videos/Mac_SSH_Key.mp4)
 
 ### Windows
 ![](softwareInstallationVideos/Windows/videos/Windows_SSH_Key.mp4)
