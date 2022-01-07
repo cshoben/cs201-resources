@@ -4,7 +4,19 @@ This guide was adapted from a Troubleshooting guide created by Charles Lyu (T'21
 
 ## VSCode + Java
 
-TBD. Please post your question on Ed for further assistance. 
+<details>
+<summary>Whenever I try to run a Java file, it says "Main class not found"</summary>
+<br>
+
+This was drafted without full detail (so some of these commands will look wrong!!!)- please let us know if this troubleshooting note does not work for you on Ed!
+
+On the bottom right of the screen, you should see something around the lines of Debugger for Java throwing an error. Hit "Fix" -> "Clear cache" -> "Restart and clear"
+
+and then try running again!
+
+</details>
+
+More TBD. Please post your question on Ed for further assistance. 
 
 ## Git - FAQ
 
