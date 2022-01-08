@@ -47,7 +47,9 @@ While you don’t need to know how to use JShell right now, ***we recommend runn
 2. Type `jshell` and press Enter.
 If the Java installation worked properly, you should see a welcoming message, and then you should be able to type Java expressions:
 
-If you encounter an error (e.g. “Command not found”), it probably means the Java installation path was not added to the system’s PATH variable. Follow [this guide](https://community.akamai.com/customers/s/article/Adding-JDK-Path-in-Mac-OS-X-Linux-or-Windows?language=en_US) to add it to PATH.
+If you receive a response such as `"jshell": command not found`, it is likely that you did not download the most recent version of the JDK (Version 17 as of January 2022). To confirm what version you downloaded, run the command `java -version` in your command line. If that command returns a versioning error, you will need to update the operating system on your device before proceeding. 
+
+If you still encounter difficulties after following the above steps, it probably means the Java installation path was not added to the system’s PATH variable. Follow [this guide](https://community.akamai.com/customers/s/article/Adding-JDK-Path-in-Mac-OS-X-Linux-or-Windows?language=en_US) to add it to PATH. If you are a Mac user, your path command should look something like `export PATH=/Library/Java/JavaVirtualMachines/liberica-jdk-17.jdk/Contents/Home/bin/:$PATH`. Similarly, a Windows path would be in the ballpark of `export PATH=C:/Program Files/Java/liberica-jdk-17.jdk/Contents/Home/bin/:$PATH`. Please check that this path exists on your device before proceeding with adding it.
 
 <div align="middle">
   <img src="images/jshell_mac.png" width="400" />
