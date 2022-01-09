@@ -49,7 +49,13 @@ If the Java installation worked properly, you should see a welcoming message, an
 
 If you receive a response such as `"jshell": command not found`, it is likely that you did not download the most recent version of the JDK (Version 17 as of January 2022). To confirm what version you downloaded, run the command `java -version` in your command line. If that command returns a versioning error, you will need to update the operating system on your device before proceeding. 
 
-If you still encounter difficulties after following the above steps, it probably means the Java installation path was not added to the system’s PATH variable. Follow [this guide](https://community.akamai.com/customers/s/article/Adding-JDK-Path-in-Mac-OS-X-Linux-or-Windows?language=en_US) to add it to PATH. If you are a Mac user, your path command should look something like `export PATH=/Library/Java/JavaVirtualMachines/liberica-jdk-17.jdk/Contents/Home/bin/:$PATH`. Similarly, a Windows path would be in the ballpark of `export PATH=C:/Program Files/Java/liberica-jdk-17.jdk/Contents/Home/bin/:$PATH`. Please check that this path exists on your device before proceeding with adding it.
+If you still encounter difficulties after following the above steps, it probably means the Java installation path was not added to the system’s PATH variable. Follow [this guide](https://community.akamai.com/customers/s/article/Adding-JDK-Path-in-Mac-OS-X-Linux-or-Windows?language=en_US) to add it to PATH. If you are a Mac user, the path command you should append to the end of the file by running `vi ~/.bash_profile` be something like `export PATH=$PATH:/Library/Java/JavaVirtualMachines/liberica-jdk-17.jdk/Contents/Home/bin/`. 
+
+For more tips running vim, refer to [this page](https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm). In summary, press the right key until your cursor is at the end of the file, then type in `:i` and enter. You should now be in INSERT mode and be able to type in the above command. After you're done editing, press `:wq` in order to exit Vim.
+
+The Windows path would be similar to `C:/Program Files/BellSoft/LibericaJDK-17/bin/` and you would go to "Edit environment variables" on your Windows computer.
+
+In either case, please check that this path exists on your device before proceeding with adding it.
 
 <div align="middle">
   <img src="images/jshell_mac.png" width="400" />
