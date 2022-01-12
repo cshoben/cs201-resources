@@ -92,6 +92,20 @@ In CompSci 201, you will mainly use “Open Folder” for assignments (large-sca
   <img src="images/vscode-extensionpack_install.gif" width="600" />
 </div>
 
+### (Optional) Change Program Output from Console to Terminal
+
+VS Code will run your Java files, but the default setting for program output will spit out a long command used to run your code - to get rid of this command (and just get your program's output), try these steps.
+
+- Code/File 
+- -> Preferences 
+- -> Settings 
+- -> search "java debug settings" 
+- -> Change "Debug - Settings: Console" prompt from "integratedTerminal" -> "internalConsole"
+
+<div align="middle">
+  <img src="images/internalConsole.png" width="500" />
+</div>
+
 ### Organizing Your Code
 
 Unlike some other IDEs, VS Code works with folders, not "VS Code projects." Any folder/directory that exists on your computer can be opened in VS Code with `File > Open`. For this course, you’ll work with folders that each store a collection of related Java files that you will code, run, and test.
