@@ -5,10 +5,22 @@ This guide was adapted from a Troubleshooting guide created by Charles Lyu (T'21
 ## VSCode + Java
 
 <details>
-<summary>Whenever I try to run a Java file, it says "Main class not found"</summary>
+<summary>None of the code I wrote is uploading to the APT server!</summary>
 <br>
 
-This was drafted without full detail (so some of these commands will look wrong!!!)- please let us know if this troubleshooting note does not work for you on Ed!
+Make sure you're saving your files! Remember to save by pressing Ctrl-S or Cmd-S. Alternatively, go to File/Code -> Auto Save.
+
+Otherwise, you might have multiple versions of a class... be careful and make sure you're submitting the right one!
+
+</details>
+
+<!--
+TODO: One thing you could add is the pesky "insert package" issue where VS Code sees your Java folder as a project when it isn't. We should look into ways of initializing folders that avoids this mess.
+-->
+
+<details>
+<summary>Whenever I try to run a Java file, it says "Main class not found"</summary>
+<br>
 
 On the bottom right of the screen, you should see something around the lines of Debugger for Java throwing an error. Hit "Fix" -> "Clear cache" -> "Restart and clear"
 
@@ -16,7 +28,7 @@ and then try running again!
 
 </details>
 
-More TBD. Please post your question on Ed for further assistance. 
+The above steps were drafted during Spring 2022, our first semester of implementing VS Code. As a result, these pieces of advice might be incomplete. Please post your question on Ed for further assistance and let us know if the troubleshooting guide does not resolve your issue, then we can revise this guide!
 
 ## Git - FAQ
 
