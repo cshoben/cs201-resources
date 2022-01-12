@@ -5,6 +5,16 @@ This guide was adapted from a Troubleshooting guide created by Charles Lyu (T'21
 ## VSCode + Java
 
 <details>
+<summary>Whenever I run Java, there's a really messy command that appears before my output!</summary>
+<br>
+
+Your code is running correctly, it's just that vscode is displaying the command used to run your code in addition to your code output.
+
+Please see [this section](https://coursework.cs.duke.edu/201-public-documentation/resources-201/-/blob/main/APTWorkflow.md#optional-change-program-output-from-console-to-terminal) on how to change your output from console to terminal.
+
+</details>
+
+<details>
 <summary>None of the code I wrote is uploading to the APT server!</summary>
 <br>
 
