@@ -52,6 +52,20 @@ To run a Java class, either right-click the file and click `Run Java` or click t
 
 One pesky thing about VS Code compared to other IDEs is that it does not automatically save your files. Remember to save by pressing Ctrl-S or Cmd-S. Alternatively, go to File -> Auto Save. If you see a dot next to your file name on the top navigation bar, that means it is not saved.
 
+### (Optional) Change Program Output from Console to Terminal
+
+VS Code will run your Java files, but the default setting for program output will spit out a long command used to run your code - to get rid of this command (and just get your program's output), try these steps.
+
+- Code/File 
+- -> Preferences 
+- -> Settings 
+- -> search "java debug settings" 
+- -> Change "Debug - Settings: Console" prompt from "integratedTerminal" -> "internalConsole"
+
+<div align="middle">
+  <img src="images/internalConsole.png" width="500" />
+</div>
+
 ## (Optional) Creating a `main` method for APTs
 As mentioned above, you do NOT need to run your code for APTs; as such, a `main` method is not required. Nevertheless, if you’re having errors, having a `main` method is extremely helpful for debugging your code.
 
