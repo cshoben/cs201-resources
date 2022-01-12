@@ -48,6 +48,10 @@ To run a Java class, either right-click the file and click `Run Java` or click t
   <img src="images/apt-run.png" width="500" />
 </div>
 
+### Remember To Save!
+
+One pesky thing about VS Code compared to other IDEs is that it does not automatically save your files. Remember to save by pressing Ctrl-S or Cmd-S. Alternatively, go to File -> Auto Save. If you see a dot next to your file name on the top navigation bar, that means it is not saved.
+
 ## (Optional) Creating a `main` method for APTs
 As mentioned above, you do NOT need to run your code for APTs; as such, a `main` method is not required. Nevertheless, if you’re having errors, having a `main` method is extremely helpful for debugging your code.
 
