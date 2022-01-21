@@ -116,7 +116,7 @@ Once you've done this, proceed to open your project.
 
 # Step 3: Open the Project in VS Code
 
-From VS Code, choose "Open Folder" from the welcome screen, and navigate to the project folder.
+From VS Code, choose "Open Folder" from the welcome screen, and navigate to the project folder. It is *imperative* that **you open the project folder itself,** ***not*** **a folder containing the project**, which may cause path problems with locating data and library files when attempting to run your code.
 
 <div align="middle">
   <img src="images/open-sesame.png" width="400" />
