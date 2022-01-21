@@ -128,7 +128,27 @@ git push
 
 </details>
 
-## Git - Comprehensive
+<details>
+<summary>I get the error "xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools)..." on Mac:</summary>
+<br>
+
+Run `xcode-select --install` on Terminal.
+
+</details>
+
+## Git/Terminal - Comprehensive
+
+<details>
+<summary>I get the error "fatal: Unable to read current working directory: Operation not permitted" on Mac:</summary>
+<br>
+
+Go to
+- Settings 
+- Security & Privacy 
+- Full Disk Access 
+and make sure Terminal is checked.
+
+</details>
 
 <details>
 <summary>I get the error “Permission denied (publickey)” when cloning the repo from GitLab with an SSH URI:</summary>
