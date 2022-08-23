@@ -1,38 +1,14 @@
 # Installing Software for CompSci 201
 
-You will need Java, VS Code, and Git to complete work in Compsci 201. Installation of these is described below. While this software is also compatible with Linux, these instructions have only been tested on Mac and Windows machines.
+You will need Java, VS Code, and Git to complete work in Compsci 201. Installation of these is described below. While all related software is compatible with Linux, these instructions have only been tested on Mac and Windows machines.
 
-## Installing Java and JShell
+## Installing Java and VS Code
 
-At Duke, we’re using the Liberica JDK, which is developed by Bellsoft and based on the open-source OpenJDK. You may have other versions and/or sources of JDK on your local machine if you installed other programs, ***but you should use the latest version of Liberica JDK for CompSci 201***. The current latest version is JDK 17 as of December 2021 (though some included images may depict even older versions).
+Java is the programming language we use in the course. You will need to install a Java Development Kit (JDK) in order to get access to a Java Virtual Machine (which runs your code) and the base packages / standard library in Java. We will use Open JDK 17 (the most recent JDK with long-term support) for the course. 
 
-The screenshots in this document are for Windows and the installer for Mac is different, but once you've selected the installer the instructions here should work for you.
+Visual Studio Code (VS Code) is a modern and extensible text editor. You will use this to read, write, and (with extensions) run and debug your code.
 
-The steps below will install both Java and JShell on your computer, since JShell is now built-in with the Java JDK.
-
-### Download the JDK
-
-Go [here](https://bell-sw.com/pages/downloads/#/java-17-lts%20/%20current). Scroll down, and under "Download Liberica JDK," click on the “LTS/Current" tab. As of the time of writing, the current release is JDK 17.
-
-Choose the version of the installer for your OS:
-- If you are using Windows, download the **MSI file** as shown below.
-  - If you have a **Surface Pro X** computer, be sure to change your version from x86 to **ARM** (to the left).
-- If you are using a Mac, download the **PKG file** as shown below.
-  - If you have an **Apple Silicon** (M1, M1X) processor, be sure to change your version from x86 to **ARM** (to the left).
-
-<div align="middle">
-  <img src="images/JDK_options.png" width="600" /> 
-</div>
-
-### Installing the JDK
-
-Run the file you downloaded and you should see a setup wizard. Follow the steps and if you get a prompt asking for permissions, accept it.
-
-***We recommend not changing the installation path***. On Windows, that means you will be installing Java in a directory starting with `C:\Program Files\`. This way, if you have any issues with Java or VS Code later in the course, the UTAs can identify issues more easily.
-
-<div align="middle">
-  <img src="images/install_jdk_mac.png" width="400" />
-</div>
+For those with Mac or Windows machines, installation of Java and VS Code along with the necessary extensions is a one step process. **Go to the [Getting Started with Java in VS Code page](https://code.visualstudio.com/docs/java/java-tutorial) and select to install the coding pack for your machine/operating system. You should not need to change any defaults during installation. If you have a Linux machine, you will need to read the rest of the guide and separately install Open JDK 17 (sources are provided in the article), VS Code, and the Java Extension Pack for VS Code.
 
 ### Launching JShell
 
@@ -65,14 +41,6 @@ In either case, please check that this path exists on your device before proceed
 
 You can type `/exit` to quit jshell in your terminal.
 
-## Installing Visual Studio Code
-
-At Duke we will use Visual Studio Code as the official development environment (IDE) for CompSci 201. In the past we have used Eclipse and IntelliJ, but we are switching to VS Code in Spring 2022. This portion of the guide was made possible with support from Raj Kundu (T'22).
-
-### Download Visual Studio Code
-
-You can download the latest version of Visual Studio Code at https://code.visualstudio.com/. The download instructions should be on the front page of the website. This should download a .exe file for Windows or a .zip file for Mac - follow the instructions given for [Windows](https://code.visualstudio.com/docs/setup/windows) or [Mac](https://code.visualstudio.com/docs/setup/mac).
-
 ### Launch and Configure Visual Studio Code
 After installation, you should be able to run Visual Studio Code and if so, you'll be greeted with a screen like the following. If you wish, you can further customize the screen (like the author has!) by going to File -> Preferences -> Settings.
 
@@ -81,16 +49,6 @@ After installation, you should be able to run Visual Studio Code and if so, you'
 </div>
 
 In CompSci 201, you will mainly use “Open Folder” for assignments (large-scale Java projects) and create your own folder for APTs. Once you have worked on some projects with VS Code, a list of recently opened projects can be found under "Open Recent."
-
-### Install VS Code Extensions for Java
-
-1. Open the “Extensions” Pane of the Sidebar
-2. Search for “CS201”
-3. Click the blue “Install” button to install the “Duke CS201 Java Extension Pack” extension
-
-<div align="middle">
-  <img src="images/vscode-extensionpack_install.gif" width="600" />
-</div>
 
 ### (Optional) Change Program Output from Console to Terminal
 
@@ -156,7 +114,7 @@ While you don’t have to write any code for now, we highly recommend creating a
 
 6. You should see the integrated terminal window pop up, and your program should run and print `Hello, world!` into the terminal.
 
-For a quick introduction to VS Code, you can skim [these](https://code.visualstudio.com/docs/introvideos/basics) official introductory resources. If you choose to do this, just watching the first one or two videos (<10 min.) should be more than enough!
+For a quick introduction to VS Code, you can skim [these](https://code.visualstudio.com/docs/introvideos/basics) official introductory resources. If you choose to do this, just watching the first one or two videos (less than 10 minutes) should be more than enough to give you a good idea of how it works.
 
 ## Installing Git and Configuring GitLab
 
