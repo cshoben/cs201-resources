@@ -176,7 +176,7 @@ Finally, push your changes by selecting "Sync Changes".
   <img src="images/vs_push.png" width="400" />
 </div>
 
-# Step 6: Submitting your Project on Gradescope
+# Step 6: Submitting your Code on Gradescope
 
 Once you’ve completed the programming part of the project and passed all/most of the tests that come with the starter code, you can submit your work to Gradescope. ***You will need to submit or resubmit your project to Gradescope every time you make a change in any of the files in your Git repo.***
 
@@ -223,13 +223,13 @@ If you get a lower score on the resubmission and want to use an older submission
 
 If you submit or resubmit after the grace period has passed (typically 24 hours after the official due date), a ***late penalty*** will apply. Refer to the syllabus for details on late penalties.
 
-# Step 7: Complete the Analysis Part of the Assignment
+# Step 7: Complete Analysis and/or Reflect
 
-Most assignments also come with a set of analysis questions, where you have to paste some results from running your program and/or answer some conceptual questions. 
-
-You can typically get the analysis questions from the assignment writeup and on the Reflect form itself. Either answer directly on the Reflect form, or write your answers in a text editor and then paste them into the form.
+Most projects also come with an *analysis* component, where you have to paste some results from running your program and/or answer some conceptual questions. Analysis components are graded for *correctness*. If an assignment has an analysis, you should simply write your answers to the questions in a text editor of your choice and upload your responses to the *separate* gradescope assignment that will be clearly labeled as "Analysis" for the given project. 
 
 The analysis questions will be manually graded by the UTAs, so your scores won’t appear immediately. Once the grades are published, typically soon after the assignment is due, you can check back on Gradescope to see the scores you got on the analysis. Note that before the assignment is due, you will still see an “Analysis” question on Gradescope without points; however, you don’t have to worry about it or do anything on Gradescope regarding the analysis.
+
+All projects conclude with a *reflect* component. This is a simple form linked in the project that asks you about how the project went. Graded for completion, not correctness.
 
 # Tutorial Videos
 
