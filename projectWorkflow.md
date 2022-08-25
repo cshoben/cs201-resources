@@ -229,7 +229,7 @@ Most projects also come with an *analysis* component, where you have to paste so
 
 The analysis questions will be manually graded by the UTAs, so your scores won’t appear immediately. Once the grades are published, typically soon after the assignment is due, you can check back on Gradescope to see the scores you got on the analysis. Note that before the assignment is due, you will still see an “Analysis” question on Gradescope without points; however, you don’t have to worry about it or do anything on Gradescope regarding the analysis.
 
-All projects conclude with a *reflect* component. This is a simple form linked in the project that asks you about how the project went. Graded for completion, not correctness.
+All projects conclude with a *reflect* component. This is a simple form linked in the project that asks you about how the project went. Encouraged but not graded.
 
 # Tutorial Videos
 
