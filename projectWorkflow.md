@@ -3,6 +3,18 @@ This guide will walk you through how to complete Java assignments/projects in Co
 
 **NOTE**: If you wish, you may also follow these instructions in [video format.](#tutorial-videos)
 
+## Outline
+- [Overview of Visual Studio Code](#overview-of-visual-studio-code)
+- [Step 0: Creating a Workspace for the Course](#step-0-creating-a-workspace-for-the-course)
+- [Step 1: Forking the Starter Code](#step-1-forking-the-starter-code)
+- [Step 2: Cloning the Repository to Your Computer](#step-2-cloning-the-repository-to-your-computer)
+- [Step 3: Open the Project in VS Code](#step-3-open-the-project-in-vs-code)
+- [Step 4: Working on the Code](#step-4-working-on-the-code)
+- [Step 5: Pushing your Code to Git](#step-5-pushing-your-code-to-git)
+- [Step 6: Submitting your Code on Gradescope](#step-6-submitting-your-code-on-gradescope)
+- [Step 7: Complete Analysis and/or Reflect](#step-7-complete-analysis-andor-reflect)
+- [Tutorial Videos](#tutorial-videos)
+
 ## Overview of Visual Studio Code
 
 The official introduction to VS Code can be found [here](https://code.visualstudio.com/docs). In particular, the following links should be useful in getting to know VS Code!
@@ -66,7 +78,7 @@ Once you fork the project, you should see your own name in the URL and on the pr
   <img src="images/fork-confirmation.png" width="400" />
 </div>
 
-# Cloning the Repository to Your Computer
+## Step 2: Cloning the Repository to Your Computer
 
 **_Now we need to clone your fork of the project using Git_**, that is, create a copy of the repo on your local machine.
 
@@ -98,7 +110,7 @@ Git should have now created a new directory `“p0-person”`  within the curren
 
 If you encounter any errors or do not see the new directory, refer to the [Troubleshooting Document](./troubleshooting.md).
 
-## Alternative Method: via VS Code
+### Alternative Method: via VS Code
 
 Alternatively, you can clone the repository directly through VS Code. Click the `Visual Studio Code (SSH)` button.
 
@@ -114,7 +126,7 @@ Accept all prompts. It will redirect you to Select a Repository Location, i.e, s
 
 Once you've done this, proceed to open your project.
 
-# Step 3: Open the Project in VS Code
+## Step 3: Open the Project in VS Code
 
 From VS Code, choose "Open Folder" from the welcome screen, and navigate to the project folder. It is *imperative* that **you open the project folder itself,** ***not*** **a folder containing the project**, which may cause path problems with locating data and library files when attempting to run your code.
 
@@ -124,13 +136,13 @@ From VS Code, choose "Open Folder" from the welcome screen, and navigate to the 
 
 You should now have access to the contents of the folder!
 
-# Step 4: Working on the Assignment
+## Step 4: Working on the Code
 
 The assignment writeup document will tell you what you have to do. Most of the work will be completing existing Java classes given in the starter code, but sometimes you will also have to create your own classes/Java files. 
 
 Many assignments come with executable classes, typically named as “Driver” or “Benchmark”, that you can run to test the correctness of your code or generate results for analysis questions. Refer to the [“Running your code” section on the APT guide](./APTWorkflow.md#running-your-code) on how to execute them.
 
-# Step 5: Pushing your Code to Git
+## Step 5: Pushing your Code to Git
 
 “Pushing to Git” means saving your changes as a Git commit and uploading them to the GitLab repo, so that your changes are now reflected in the online server.
 
@@ -176,7 +188,7 @@ Finally, push your changes by selecting "Sync Changes".
   <img src="images/vs_push.png" width="400" />
 </div>
 
-# Step 6: Submitting your Code on Gradescope
+## Step 6: Submitting your Code on Gradescope
 
 Once you’ve completed the programming part of the project and passed all/most of the tests that come with the starter code, you can submit your work to Gradescope. ***You will need to submit or resubmit your project to Gradescope every time you make a change in any of the files in your Git repo.***
 
@@ -223,7 +235,7 @@ If you get a lower score on the resubmission and want to use an older submission
 
 If you submit or resubmit after the grace period has passed (typically 24 hours after the official due date), a ***late penalty*** will apply. Refer to the syllabus for details on late penalties.
 
-# Step 7: Complete Analysis and/or Reflect
+## Step 7: Complete Analysis and/or Reflect
 
 Most projects also come with an *analysis* component, where you have to paste some results from running your program and/or answer some conceptual questions. Analysis components are graded for *correctness*. If an assignment has an analysis, you should simply write your answers to the questions in a text editor of your choice and upload your responses to the *separate* gradescope assignment that will be clearly labeled as "Analysis" for the given project. 
 
@@ -231,24 +243,24 @@ The analysis questions will be manually graded by the UTAs, so your scores won�
 
 All projects conclude with a *reflect* component. This is a simple form linked in the project that asks you about how the project went. Encouraged but not graded.
 
-# Tutorial Videos
+## Tutorial Videos
 
-## Cloning from GitLab
+### Cloning from GitLab
 
-### Mac
+#### Mac
 
 ![](softwareInstallationVideos/Mac/videos/Mac_Clone_Project.mp4)
 
-### Windows
+#### Windows
 
 ![](softwareInstallationVideos/Windows/videos/Windows_GitLab_Cloning.mp4)
 
-## Managing Project Workflow
+### Managing Project Workflow
 
-### Mac
+#### Mac
 
 ![](softwareInstallationVideos/Mac/videos/Mac_Project_Workflow_2.0.mp4)
 
-### Windows
+#### Windows
 
 ![](softwareInstallationVideos/Windows/videos/Windows_Project_Workflow.mp4)
