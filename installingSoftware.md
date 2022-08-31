@@ -156,8 +156,8 @@ Note that for this step, Git Bash must be used on Windows. (The Command Prompt i
 
 ### Adding SSH Key to GitLab
 
-Follow the stops in the next section in the GitLab documentation, “***Adding an SSH key to your GitLab account***”:
-https://coursework.cs.duke.edu/help/ssh/index.md
+Follow the steps in the next section in the GitLab documentation, “***Adding an SSH key to your GitLab account***”:
+https://coursework.cs.duke.edu/help/user/ssh.md#add-an-ssh-key-to-your-gitlab-account
 
 Note that you will use the commands shown in the documentation (subject to your OS) to copy the ***public*** part of your SSH key, ***which should start with “ssh-ed25519”***. You will then login to your GitLab account at https://coursework.cs.duke.edu, enter “Settings” from the top right corner, and then paste the public key by following the instructions in the documentation.
 
