@@ -1,5 +1,5 @@
 # Project Workflow
-This guide will walk you through how to complete Java assignments/projects in Compsci 201 by using P0: Person201 as an example. Before starting, you should have installed all the necessary software (Java Liberica JDK, Git Bash, Visual Studio Code) as explained in [this guide](./installingSoftware.md). You should have also installed a personal SSH key, as explained in the previous version of this guide.
+This guide will walk you through how to complete Java assignments/projects in Compsci 201 by using P0: Person201 as an example. Before starting, you should have installed all the necessary software as explained in [this guide](./installingSoftware.md). You should have also installed a personal SSH key, as explained in the previous version of this guide.
 
 **NOTE**: If you wish, you may also follow these instructions in [video format.](#tutorial-videos)
 
@@ -63,13 +63,19 @@ For every Java project (sometimes called “assignment”), course staff will cr
 Once you open that GitLab repository, **_you will need to fork the project first_**, that is, create your own copy of the repo. Click on the **“Fork”** button at the top right: (_If you don’t see the “Fork” button, sign in with your Duke NetID from the top right_).
 
 <div align="middle">
-  <img src="images/fork-repo.png" height="200" />
+  <img src="images/fork-repo.png"/>
 </div>
 
 Then choose your own account to fork it under your namespace (example: Charles Lyu (T'21)):
 
 <div align="middle">
   <img src="images/fork-workspace.png" width="200" />
+</div>
+
+And **confirm that the visibility of your fork is set to private** as seen below. This may happen automatically when you select your personal namespace, but you should ensure it is selected so that others cannot directly access your code.
+
+<div align="middle">
+  <img src="images/visibility.png"/>
 </div>
 
 Once you fork the project, you should see your own name in the URL and on the project home page. It should also mention that your project is forked from the 201 namespace.
